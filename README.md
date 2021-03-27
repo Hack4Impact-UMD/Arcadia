@@ -7,4 +7,4 @@ The team consists of:
 - Steven Berit
 - Sravya Kommuri
 - Miranda Song
-- Sean Mohs
+- Sean Ha
