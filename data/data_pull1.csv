@@ -1,0 +1,452 @@
+Loyalty Number,First Name,Last Name,Visit Date,Location,Category,Product,Quantity,Unit Price,Price
+10000006,Jamaica,Jennings,2017-07-20 19:57:20,Community of Hope/Bellevue Library,Produce,Nectarines,1.66,2.5,4.15
+10000006,Jamaica,Jennings,2017-07-20 19:57:20,Community of Hope/Bellevue Library,Produce,Peaches,1.58,2.5,3.95
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Apples,1.1,2,2.2
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Blueberries,1,3.5,3.5
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Cherries (Sweet),1,5,5
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Cucumber,0.92,3.5,3.22
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Onion (bulb),0.95,1.5,1.43
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Peaches,2,2.5,5
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Potatoes (Sweet),1.3,1.5,1.95
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Raspberries,1,3,3
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Spinach,1,2.5,2.5
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Squash (Summer),0.85,2,1.7
+10000007,Castella,Pinkneys,2017-06-21 19:43:59,LeDroit Park,Produce,Strawberries,1,5,5
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Beets - Bunched,2,2.5,5
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Cherries (Sweet),1,0,0
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Peaches,2.09,2.5,5.23
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Scallion/Green Onion,1,2,2
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Spinach,1,2.5,2.5
+10000007,Castella,Pinkneys,2017-06-28 15:49:01,Childrens National Medical Center WIC Clinic,Produce,Strawberries,1,5,5
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Apples,1.33,2.5,3.33
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Cherries (Sweet),1,5,5
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Kale,0.77,2.5,1.93
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Nectarines,1.58,2.5,3.95
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Peaches,1.45,2.5,3.63
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Peppers (Bell),0.5,3,1.5
+10000007,Castella,Pinkneys,2017-07-12 15:35:36,Childrens National Medical Center WIC Clinic,Produce,Tomatoes (Red),2.42,2.5,6.05
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Apples,1.5,2,3
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Blackberries,1,3.5,3.5
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Collards,0.6,2.5,1.5
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Kale,0.74,2.5,1.85
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Nectarines,1.85,2.5,4.63
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Peaches,1,2,2
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Produce,Tomatoes (Red),1.4,2.5,3.5
+10000007,Castella,Pinkneys,2017-08-02 20:25:25,LeDroit Park,Common Good City Farm Produce,Cucumbers,0.8,2.5,2
+10000008,Crystal,Greathouse,2017-07-14 19:39:08,Barry Farm Recreation Center,Produce,Peaches,0.4,2.5,1
+10000008,Crystal,Greathouse,2017-07-14 19:39:08,Barry Farm Recreation Center,Produce,Peaches,4.25,2.5,10.63
+10000009,Pandora,Johnson,2017-07-20 20:02:31,Community of Hope/Bellevue Library,Produce,Carrots (w/ Greens),2,2.5,5
+10000009,Pandora,Johnson,2017-07-20 20:02:31,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),0.8,2.5,2
+10000012,Sheila,Betheaa,2017-07-20 20:04:53,Community of Hope/Bellevue Library,Produce,Cantaloupe,2,1.5,3
+10000012,Sheila,Betheaa,2017-07-20 20:04:53,Community of Hope/Bellevue Library,Produce,Okra (Pound),0.38,4,1.52
+10000012,Sheila,Betheaa,2017-07-20 20:04:53,Community of Hope/Bellevue Library,Produce,Okra (Pound),0.55,4,2.2
+10000012,Sheila,Betheaa,2017-07-20 20:04:53,Community of Hope/Bellevue Library,Produce,Peaches,1.19,2.5,2.98
+10000012,Sheila,Betheaa,2017-07-20 20:04:53,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1,2.5,2.5
+10000012,Sheila,Betheaa,2017-08-03 19:27:09,Community of Hope/Bellevue Library,Produce,Blueberries,1,3.5,3.5
+10000012,Sheila,Betheaa,2017-08-03 19:27:09,Community of Hope/Bellevue Library,Produce,Garlic,0.1,10,1
+10000012,Sheila,Betheaa,2017-08-03 19:27:09,Community of Hope/Bellevue Library,Produce,Plums,0.75,3,2.25
+10000012,Sheila,Betheaa,2017-08-03 19:27:09,Community of Hope/Bellevue Library,Produce,Watermelon (Small),6.1,1,6.1
+10000013,Kenneth,Butler ,2017-06-21 16:45:04,Childrens National Medical Center WIC Clinic,Meat,Pork Spareribs,1.95,5,9.75
+10000013,Kenneth,Butler ,2017-06-21 16:45:04,Childrens National Medical Center WIC Clinic,Meat,Turkey Wings,2.7,4,10.8
+10000013,Kenneth,Butler ,2017-08-02 16:30:43,Childrens National Medical Center WIC Clinic,Produce,Scallion/Green Onion,1,2,2
+10000013,Kenneth,Butler ,2017-08-09 15:22:35,Childrens National Medical Center WIC Clinic,Produce,Tomatoes (Red),1.6,2.5,4
+10000013,Kenneth,Butler ,2017-08-09 15:22:35,Childrens National Medical Center WIC Clinic,Produce,Watermelon (Small),8,1,8
+10000015,Cleastine,Lessey,2017-07-20 14:12:58,Congress Heights Senior Wellness Center,Produce,Blueberries,1,3.5,3.5
+10000015,Cleastine,Lessey,2017-07-20 14:12:58,Congress Heights Senior Wellness Center,Produce,Blueberries,1,3.5,3.5
+10000015,Cleastine,Lessey,2017-07-20 14:12:58,Congress Heights Senior Wellness Center,Produce,Cabbage,1.1,1.25,1.38
+10000015,Cleastine,Lessey,2017-07-20 14:12:58,Congress Heights Senior Wellness Center,Produce,Cucumber,0.9,1.5,1.35
+10000015,Cleastine,Lessey,2017-07-20 14:12:58,Congress Heights Senior Wellness Center,Produce,Squash (Summer),1.4,2,2.8
+10000015,Cleastine,Lessey,2017-07-20 14:12:58,Congress Heights Senior Wellness Center,Produce,Tomatoes (Red),0.6,2.5,1.5
+10000015,Cleastine,Lessey,2017-07-27 14:10:26,Congress Heights Senior Wellness Center,Produce,Cantaloupe,6.62,1,6.62
+10000015,Cleastine,Lessey,2017-07-27 14:10:26,Congress Heights Senior Wellness Center,Produce,Peaches,1.14,2.5,2.85
+10000015,Cleastine,Lessey,2017-07-27 14:10:26,Congress Heights Senior Wellness Center,Produce,Tomatoes (Red),0.48,2.5,1.2
+10000015,Cleastine,Lessey,2017-07-27 14:10:26,Congress Heights Senior Wellness Center,Produce,Tomatoes (Red),0.3,2.5,0.75
+10000015,Cleastine,Lessey,2017-07-27 14:10:26,Congress Heights Senior Wellness Center,Produce,Tomatoes (Red),0.4,2.5,1
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,Cantaloupe,7,1,7
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,Peaches,0.65,2,1.3
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,Peaches,0.6,2,1.2
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,"Pepper, Jalapeno",0.25,1,0.25
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,Peppers (Bell),0.44,3,1.32
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,Potatoes ,0.75,1.5,1.13
+10000015,Cleastine,Lessey,2017-08-03 14:19:16,Congress Heights Senior Wellness Center,Produce,Squash (Summer),0.9,2,1.8
+10000018,Ida,Tripp,2017-07-20 19:59:43,Community of Hope/Bellevue Library,Produce,Apples,1.2,2.5,3
+10000018,Ida,Tripp,2017-08-03 20:03:40,Community of Hope/Bellevue Library,Produce,Apples,2.3,2,4.6
+10000018,Ida,Tripp,2017-08-03 20:03:40,Community of Hope/Bellevue Library,Produce,Peppers (Bell),0.5,3,1.5
+10000018,Ida,Tripp,2017-08-03 20:03:40,Community of Hope/Bellevue Library,Produce,Plums,1,3,3
+10000018,Ida,Tripp,2017-08-03 20:03:40,Community of Hope/Bellevue Library,Produce,Watermelon (Small),9.5,1,9.5
+10000023,Betty,Green,2017-06-30 19:43:39,Barry Farm Recreation Center,Produce,Peaches,4,2.5,10
+10000027,Christine,Garaghty,2017-07-20 19:45:06,Community of Hope/Bellevue Library,Produce,Cucumber,0.47,1.5,0.71
+10000027,Christine,Garaghty,2017-07-20 19:45:06,Community of Hope/Bellevue Library,Produce,Nectarines,1.024,2.5,2.56
+10000027,Christine,Garaghty,2017-07-20 19:45:06,Community of Hope/Bellevue Library,Produce,Peaches,2.09,2.5,5.23
+10000027,Christine,Garaghty,2017-07-20 19:45:06,Community of Hope/Bellevue Library,Produce,Salad Mix,1,3.5,3.5
+10000027,Christine,Garaghty,2017-08-11 20:26:01,Barry Farm Recreation Center,Produce,Apples,1.25,2,2.5
+10000027,Christine,Garaghty,2017-08-11 20:26:01,Barry Farm Recreation Center,Produce,Crimini Mushrooms,1,3,3
+10000027,Christine,Garaghty,2017-08-11 20:26:01,Barry Farm Recreation Center,Produce,Cucumber,1.12,1.5,1.68
+10000027,Christine,Garaghty,2017-08-11 20:26:01,Barry Farm Recreation Center,Produce,Peaches,1.75,2,3.5
+10000027,Christine,Garaghty,2017-08-11 20:26:01,Barry Farm Recreation Center,Produce,Peppers (Bell),0.44,3,1.32
+10000029,Harry,Starks,2017-07-07 19:39:55,Barry Farm Recreation Center,Produce,Collards,1.96,2.5,4.9
+10000029,Harry,Starks,2017-07-07 19:39:55,Barry Farm Recreation Center,Produce,Peaches,1.36,2.5,3.4
+10000029,Harry,Starks,2017-07-07 19:39:55,Barry Farm Recreation Center,Produce,Squash (Summer),0.82,2,1.64
+10000029,Harry,Starks,2017-07-14 19:36:58,Barry Farm Recreation Center,Produce,Broccoli,1.013,3,3.04
+10000029,Harry,Starks,2017-07-14 19:36:58,Barry Farm Recreation Center,Produce,Generic Produce,2.5,1,2.5
+10000029,Harry,Starks,2017-07-14 19:36:58,Barry Farm Recreation Center,Produce,Generic Produce,0.85,1,0.85
+10000029,Harry,Starks,2017-07-14 19:36:58,Barry Farm Recreation Center,Produce,Onion (bulb),1.34,1.5,2.01
+10000029,Harry,Starks,2017-07-14 19:36:58,Barry Farm Recreation Center,Produce,Peaches,1.9,2.5,4.75
+10000029,Harry,Starks,2017-07-14 19:36:58,Barry Farm Recreation Center,Produce,Tomatoes (Red),1.54,2.5,3.85
+10000029,Harry,Starks,2017-07-19 20:17:12,Hendley Elementary,Produce,Blackberries,1,3.5,3.5
+10000029,Harry,Starks,2017-07-19 20:17:12,Hendley Elementary,Produce,Nectarines,0.42,2.5,1.05
+10000029,Harry,Starks,2017-07-19 20:17:12,Hendley Elementary,Produce,Okra (Pound),0.9,4,3.6
+10000029,Harry,Starks,2017-07-19 20:17:12,Hendley Elementary,Produce,Peaches,3.48,2.5,8.7
+10000029,Harry,Starks,2017-07-19 20:17:12,Hendley Elementary,Produce,Peppers (Bell),0.43,3,1.29
+10000029,Harry,Starks,2017-07-19 20:17:12,Hendley Elementary,Produce,Peppers (Bell),0.33,3,0.99
+10000029,Harry,Starks,2017-07-27 15:43:14,Congress Heights Senior Wellness Center,Produce,Blackberries,1,3.5,3.5
+10000029,Harry,Starks,2017-07-27 15:43:14,Congress Heights Senior Wellness Center,Produce,Nectarines,0.948,2.5,2.37
+10000029,Harry,Starks,2017-07-27 15:43:14,Congress Heights Senior Wellness Center,Produce,Peaches,1.25,2.5,3.13
+10000029,Harry,Starks,2017-07-27 15:43:14,Congress Heights Senior Wellness Center,Produce,Raspberries,1,3,3
+10000029,Harry,Starks,2017-08-04 19:46:06,Barry Farm Recreation Center,Produce,Blackberries,1,3.5,3.5
+10000029,Harry,Starks,2017-08-04 19:46:06,Barry Farm Recreation Center,Produce,Cantaloupe,4.2,1,4.2
+10000029,Harry,Starks,2017-08-04 19:46:06,Barry Farm Recreation Center,Produce,Peaches,2.25,2,4.5
+10000029,Harry,Starks,2017-08-04 19:46:06,Barry Farm Recreation Center,Produce,Watermelon (Small),3.8,1,3.8
+10000035,Lui Lan,Lee,2017-07-12 14:18:50,Wah Luck House Chinatown,Produce,Garlic,1,10,10
+10000035,Lui Lan,Lee,2017-07-12 14:18:50,Wah Luck House Chinatown,Produce,Scallion/Green Onion,1,2,2
+10000035,Lui Lan,Lee,2017-07-26 14:39:09,Wah Luck House Chinatown,Produce,Garlic,0.7,10,7
+10000039,Wan,Lin,2017-07-12 14:26:39,Wah Luck House Chinatown,Produce,Crimini Mushrooms,2,3,6
+10000039,Wan,Lin,2017-07-12 14:26:39,Wah Luck House Chinatown,Produce,Scallion/Green Onion,1,1,1
+10000039,Wan,Lin,2017-07-26 14:49:04,Wah Luck House Chinatown,Produce,Celery,1,2.5,2.5
+10000039,Wan,Lin,2017-07-26 14:49:04,Wah Luck House Chinatown,Produce,Okra (Pound),1.6,4,6.4
+10000039,Wan,Lin,2017-07-26 14:49:04,Wah Luck House Chinatown,Produce,Watermelon (Small),3.1,1,3.1
+10000039,Wan,Lin,2017-08-09 14:25:01,Wah Luck House Chinatown,Produce,Peaches,3.5,2,7
+10000041,See Kwun,Lee,2017-07-12 14:19:47,Wah Luck House Chinatown,Produce,Crimini Mushrooms,2,3,6
+10000041,See Kwun,Lee,2017-07-12 14:19:47,Wah Luck House Chinatown,Produce,Scallion/Green Onion,1,1,1
+10000041,See Kwun,Lee,2017-07-26 14:38:48,Wah Luck House Chinatown,Produce,Garlic,1.2,10,12
+10000054,Zhao,Lin,2017-07-12 14:22:59,Wah Luck House Chinatown,Produce,Blackberries,2,3.5,7
+10000054,Zhao,Lin,2017-07-12 14:22:59,Wah Luck House Chinatown,Produce,Cucumber,2,1.5,3
+10000054,Zhao,Lin,2017-07-12 14:22:59,Wah Luck House Chinatown,Produce,Tomatoes (Cherry) ,1,2,2
+10000055,Peng,Li Yen,2017-07-12 14:16:28,Wah Luck House Chinatown,Produce,Apples,2.8,2.5,7
+10000059,Fupei,Wu,2017-07-12 14:12:26,Wah Luck House Chinatown,Produce,Apples,1.32,2.5,3.3
+10000059,Fupei,Wu,2017-07-12 14:12:26,Wah Luck House Chinatown,Produce,Garlic,1.37,10,13.7
+10000059,Fupei,Wu,2017-07-26 14:18:51,Wah Luck House Chinatown,Produce,Garlic,2.2,10,22
+10000060,Katie,Carney,2017-07-07 15:30:43,Deanwood Recreation Center,Produce,Tomatoes (Red),0.8,2.5,2
+10000060,Katie,Carney,2017-07-28 14:50:39,Deanwood Recreation Center,Produce,Apples,1.62,2.5,4.05
+10000060,Katie,Carney,2017-07-28 14:50:39,Deanwood Recreation Center,Produce,Beans (Green),0.98,2,1.96
+10000060,Katie,Carney,2017-07-28 14:50:39,Deanwood Recreation Center,Produce,Corn,3,0.66,1.98
+10000060,Katie,Carney,2017-07-28 14:50:39,Deanwood Recreation Center,Produce,Squash (Summer),1.78,2,3.56
+10000060,Katie,Carney,2017-07-28 14:50:39,Deanwood Recreation Center,Produce,Tomatoes (Red),0.5,2.5,1.25
+10000060,Katie,Carney,2017-07-28 15:13:46,Deanwood Recreation Center,Produce,Beans (Green),0.78,2,1.56
+10000060,Katie,Carney,2017-07-28 15:13:46,Deanwood Recreation Center,Produce,Blueberries,1,3.5,3.5
+10000060,Katie,Carney,2017-07-28 15:13:46,Deanwood Recreation Center,Produce,Broccoli,0.58,3,1.74
+10000060,Katie,Carney,2017-07-28 15:13:46,Deanwood Recreation Center,Produce,Corn,3,0.66,1.98
+10000060,Katie,Carney,2017-07-28 15:13:46,Deanwood Recreation Center,Produce,Nectarines,0.5,2.5,1.25
+10000067,Charlotte,Wolters,2017-06-30 15:40:23,Deanwood Recreation Center,Produce,Blueberries,2,3.5,7
+10000067,Charlotte,Wolters,2017-06-30 15:40:23,Deanwood Recreation Center,Produce,Generic Produce,4,1,4
+10000067,Charlotte,Wolters,2017-07-07 15:11:44,Deanwood Recreation Center,Produce,Blueberries,2,3.5,7
+10000067,Charlotte,Wolters,2017-07-07 15:11:44,Deanwood Recreation Center,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000067,Charlotte,Wolters,2017-07-07 15:11:44,Deanwood Recreation Center,Produce,Cherries (Sweet),1,5,5
+10000067,Charlotte,Wolters,2017-07-07 15:11:44,Deanwood Recreation Center,Produce,Nectarines,0.9,2.5,2.25
+10000067,Charlotte,Wolters,2017-07-07 15:11:44,Deanwood Recreation Center,Produce,Peaches,0.88,2.5,2.2
+10000067,Charlotte,Wolters,2017-07-21 14:38:04,Deanwood Recreation Center,Produce,Blueberries,2,3.5,7
+10000067,Charlotte,Wolters,2017-07-21 14:38:04,Deanwood Recreation Center,Produce,Cantaloupe,3.65,1.5,5.48
+10000067,Charlotte,Wolters,2017-07-21 14:38:04,Deanwood Recreation Center,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000067,Charlotte,Wolters,2017-07-21 14:38:04,Deanwood Recreation Center,Produce,Collards,1.65,2.5,4.13
+10000067,Charlotte,Wolters,2017-07-21 14:38:04,Deanwood Recreation Center,Produce,Corn,6,0.66,3.96
+10000067,Charlotte,Wolters,2017-07-21 14:38:04,Deanwood Recreation Center,Produce,Kale,1.3,2.5,3.25
+10000067,Charlotte,Wolters,2017-07-28 15:42:28,Deanwood Recreation Center,Produce,Beans (Green),0.9,2,1.8
+10000067,Charlotte,Wolters,2017-07-28 15:42:28,Deanwood Recreation Center,Produce,Onion (bulb),0.47,1.5,0.71
+10000067,Charlotte,Wolters,2017-07-28 15:42:28,Deanwood Recreation Center,Produce,Peaches,0.87,2.5,2.18
+10000067,Charlotte,Wolters,2017-07-28 15:42:28,Deanwood Recreation Center,Produce,Peaches,0.95,2.5,2.38
+10000069,Felicia,McCray,2017-06-23 14:48:44,Deanwood Recreation Center,Produce,Blueberries,1,3.5,3.5
+10000069,Felicia,McCray,2017-06-23 14:48:44,Deanwood Recreation Center,Produce,Cabbage,1.8,1.25,2.25
+10000069,Felicia,McCray,2017-06-23 14:48:44,Deanwood Recreation Center,Produce,Crimini Mushrooms,1,4,4
+10000069,Felicia,McCray,2017-06-23 14:48:44,Deanwood Recreation Center,Produce,Seconds,2.3,1,2.3
+10000069,Felicia,McCray,2017-06-23 14:48:44,Deanwood Recreation Center,Produce,Spinach,1,2.5,2.5
+10000070,Gavina,Villafane,2017-06-23 14:55:27,Deanwood Recreation Center,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000070,Gavina,Villafane,2017-06-23 14:55:27,Deanwood Recreation Center,Produce,Seconds,1.14,1,1.14
+10000070,Gavina,Villafane,2017-07-14 15:36:44,Deanwood Recreation Center,Produce,Onion (bulb),0.79,1.5,1.19
+10000070,Gavina,Villafane,2017-07-14 15:36:44,Deanwood Recreation Center,Produce,Peaches,0.95,2.5,2.38
+10000070,Gavina,Villafane,2017-07-14 15:36:44,Deanwood Recreation Center,Produce,Peppers (Bell),0.25,3,0.75
+10000070,Gavina,Villafane,2017-07-14 15:36:44,Deanwood Recreation Center,Produce,Potatoes ,1.95,1.5,2.93
+10000070,Gavina,Villafane,2017-07-14 15:36:44,Deanwood Recreation Center,Produce,Squash (Summer),0.25,2,0.5
+10000070,Gavina,Villafane,2017-07-14 15:36:44,Deanwood Recreation Center,Produce,Tomatoes (Red),0.4,2.5,1
+10000070,Gavina,Villafane,2017-07-28 15:26:13,Deanwood Recreation Center,Produce,Onion (bulb),1.33,1.5,2
+10000070,Gavina,Villafane,2017-07-28 15:26:13,Deanwood Recreation Center,Produce,Peaches,2.31,2.5,5.78
+10000070,Gavina,Villafane,2017-07-28 15:26:13,Deanwood Recreation Center,Produce,Peaches,0.93,2.5,2.33
+10000070,Gavina,Villafane,2017-07-28 15:26:13,Deanwood Recreation Center,Produce,Peppers (Bell),0.33,3,0.99
+10000070,Gavina,Villafane,2017-07-28 15:26:13,Deanwood Recreation Center,Produce,Squash (Summer),0.82,2,1.64
+10000070,Gavina,Villafane,2017-08-04 15:49:14,Deanwood Recreation Center,Produce,Peppers (Bell),0.58,3,1.74
+10000070,Gavina,Villafane,2017-08-04 15:49:14,Deanwood Recreation Center,Produce,Potatoes ,1.74,1.5,2.61
+10000070,Gavina,Villafane,2017-08-11 15:17:04,Deanwood Recreation Center,Produce,Asian Pears,0.76,2,1.52
+10000070,Gavina,Villafane,2017-08-11 15:17:04,Deanwood Recreation Center,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000070,Gavina,Villafane,2017-08-11 15:17:04,Deanwood Recreation Center,Produce,Nectarines,0.5,2.5,1.25
+10000070,Gavina,Villafane,2017-08-11 15:17:04,Deanwood Recreation Center,Produce,Watermelon (Small),5,1,5
+10000072,Steven ,Hill,2017-07-06 15:08:45,Congress Heights Senior Wellness Center,Produce,Peaches,0.79,2.5,1.98
+10000072,Steven ,Hill,2017-07-14 14:49:03,Deanwood Recreation Center,Produce,Peaches,0.8,2.5,2
+10000072,Steven ,Hill,2017-07-21 15:18:07,Deanwood Recreation Center,Produce,Apples,0.8,2.5,2
+10000072,Steven ,Hill,2017-07-28 14:36:18,Deanwood Recreation Center,Produce,Tomatoes (Red),0.92,2.5,2.3
+10000072,Steven ,Hill,2017-08-11 14:15:32,Deanwood Recreation Center,Produce,Asian Pears,1,2,2
+10000073,LaShawn,Lewis,2017-06-23 15:09:10,Deanwood Recreation Center,Produce,Blueberries,2,3.5,7
+10000073,LaShawn,Lewis,2017-06-23 15:09:10,Deanwood Recreation Center,Produce,Broccoli,1.15,3,3.45
+10000073,LaShawn,Lewis,2017-06-23 15:09:10,Deanwood Recreation Center,Produce,Cherries (Sweet),2,5,10
+10000073,LaShawn,Lewis,2017-06-23 15:09:10,Deanwood Recreation Center,Produce,Generic Produce,2.5,1,2.5
+10000073,LaShawn,Lewis,2017-06-23 15:09:10,Deanwood Recreation Center,Produce,Potatoes (Sweet),0.7,1.5,1.05
+10000073,LaShawn,Lewis,2017-06-23 15:09:10,Deanwood Recreation Center,Produce,Raspberries,1,3,3
+10000075,Brian,Smalls,2017-06-23 14:43:04,Deanwood Recreation Center,Produce,Crimini Mushrooms,2,4,8
+10000075,Brian,Smalls,2017-06-23 14:43:04,Deanwood Recreation Center,Produce,Raspberries,1,3,3
+10000075,Brian,Smalls,2017-07-14 14:09:39,Deanwood Recreation Center,Produce,Broccoli,0.45,3,1.35
+10000075,Brian,Smalls,2017-07-14 14:09:39,Deanwood Recreation Center,Produce,Collards,2.7,2.5,6.75
+10000075,Brian,Smalls,2017-07-14 14:09:39,Deanwood Recreation Center,Produce,Salad Mix,1,3.5,3.5
+10000075,Brian,Smalls,2017-07-14 14:09:39,Deanwood Recreation Center,Produce,Tomatoes (Red),0.16,2.5,0.4
+10000075,Brian,Smalls,2017-07-21 14:27:54,Deanwood Recreation Center,Produce,Broccoli,0.75,3,2.25
+10000075,Brian,Smalls,2017-07-21 14:27:54,Deanwood Recreation Center,Produce,Herbs,1,1,1
+10000075,Brian,Smalls,2017-07-21 14:27:54,Deanwood Recreation Center,Produce,Raspberries,1,3,3
+10000075,Brian,Smalls,2017-07-21 14:27:54,Deanwood Recreation Center,Produce,Swiss Chard,0.7,2.5,1.75
+10000075,Brian,Smalls,2017-07-28 14:00:15,Deanwood Recreation Center,Produce,Broccoli,0.82,3,2.46
+10000075,Brian,Smalls,2017-07-28 14:00:15,Deanwood Recreation Center,Produce,Onion (bulb),0.54,1.5,0.81
+10000075,Brian,Smalls,2017-07-28 14:00:15,Deanwood Recreation Center,Produce,Onion (bulb),1.35,1.5,2.03
+10000075,Brian,Smalls,2017-07-28 14:00:15,Deanwood Recreation Center,Produce,Peppers (Bell),0.65,3,1.95
+10000075,Brian,Smalls,2017-08-04 14:31:42,Deanwood Recreation Center,Produce,Kale,1.46,2.5,3.65
+10000075,Brian,Smalls,2017-08-04 14:31:42,Deanwood Recreation Center,Produce,Kale,1.59,2.5,3.98
+10000075,Brian,Smalls,2017-08-04 14:31:42,Deanwood Recreation Center,Produce,Kale,1.39,2.5,3.48
+10000075,Brian,Smalls,2017-08-04 14:31:42,Deanwood Recreation Center,Produce,Raspberries,3,3,9
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Beans (Green),2,3,6
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Blueberries,2,3.5,7
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Cabbage,3.8,1.25,4.75
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Cauliflower,6.13,3,18.39
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Nectarines,1.316,2.5,3.29
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Onion (bulb),4,1.5,6
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Peaches,2.68,2.5,6.7
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Potatoes ,0.91,1.5,1.37
+10000082,Donna,Muhammed,2017-06-30 15:41:25,Deanwood Recreation Center,Produce,Raspberries,2,3,6
+10000082,Donna,Muhammed,2017-07-25 20:59:17,Parkside Unity Clinic/Circle 7 Express,Produce,Scallion/Green Onion,1,2,2
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Beans (Green),0.89,2,1.78
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Blackberries,1,3.5,3.5
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Cabbage,2.3,1.25,2.88
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Cantaloupe,4.74,1,4.74
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Corn,3,0.66,1.98
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Nectarines,2.26,2.5,5.65
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Okra (Pound),0.5,4,2
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Peaches,2.36,2.5,5.9
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Peppers (Bell),0.46,3,1.38
+10000082,Donna,Muhammed,2017-07-28 14:12:46,Deanwood Recreation Center,Produce,Raspberries,1,3,3
+10000082,Donna,Muhammed,2017-07-28 15:58:20,Deanwood Recreation Center,Produce,Peaches,0.5,2.5,1.25
+10000082,Donna,Muhammed,2017-07-28 15:58:20,Deanwood Recreation Center,Produce,Peppers (Bell),3.6,3,10.8
+10000082,Donna,Muhammed,2017-07-28 15:58:20,Deanwood Recreation Center,Produce,Peppers (Bell),2.75,3,8.25
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Apples,5.55,2,11.1
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Beets - Bunched,1,2.5,2.5
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Blueberries,2,3.5,7
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Broccoli,1.22,3,3.66
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Carrots (w/ Greens),1,2.5,2.5
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Okra (Pound),1.2,4,4.8
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Onion (bulb),5.313,1.5,7.97
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Peaches,3.77,2,7.54
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Peaches,6,2,12
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Peppers (Bell),3,3,9
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Potatoes ,1.3,1.5,1.95
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Raspberries,2,3,6
+10000082,Donna,Muhammed,2017-08-11 16:33:06,Deanwood Recreation Center,Produce,Tomatoes (Red),8.39,2.5,20.98
+10000096,Debbie,Dykes,2017-07-19 19:35:34,Hendley Elementary,Produce,Apples,0.68,2.5,1.7
+10000096,Debbie,Dykes,2017-07-19 19:35:34,Hendley Elementary,Produce,Cantaloupe,1.74,1.5,2.61
+10000096,Debbie,Dykes,2017-07-19 19:35:34,Hendley Elementary,Produce,Garlic,0.35,10,3.5
+10000096,Debbie,Dykes,2017-07-19 19:35:34,Hendley Elementary,Produce,Potatoes ,0.77,1.5,1.16
+10000096,Debbie,Dykes,2017-07-19 19:35:34,Hendley Elementary,Produce,Spinach,1,2.5,2.5
+10000097,Latoya,Gren,2017-07-06 19:45:39,Community of Hope/Bellevue Library,Produce,Collards,1.65,2.5,4.13
+10000097,Latoya,Gren,2017-07-19 20:11:50,Hendley Elementary,Produce,Apples,0.45,2.5,1.13
+10000097,Latoya,Gren,2017-07-19 20:11:50,Hendley Elementary,Produce,Beans (Green),0.75,3,2.25
+10000097,Latoya,Gren,2017-07-19 20:11:50,Hendley Elementary,Produce,Cucumber,0.43,1.5,0.65
+10000097,Latoya,Gren,2017-07-19 20:11:50,Hendley Elementary,Produce,Peppers (Bell),0.56,3,1.68
+10000097,Latoya,Gren,2017-07-19 20:11:50,Hendley Elementary,Produce,Squash (Summer),0.6,2,1.2
+10000097,Latoya,Gren,2017-08-15 15:31:38,The Overlook at Oxon Run,Produce,Apples,1,2,2
+10000097,Latoya,Gren,2017-08-15 15:31:38,The Overlook at Oxon Run,Produce,Asian Pears,1.6,2,3.2
+10000097,Latoya,Gren,2017-08-15 15:31:38,The Overlook at Oxon Run,Produce,Beans (Green),0.9,2,1.8
+10000097,Latoya,Gren,2017-08-15 15:31:38,The Overlook at Oxon Run,Produce,Cabbage,1.4,1.25,1.75
+10000097,Latoya,Gren,2017-08-15 15:31:38,The Overlook at Oxon Run,Produce,Collards,2.1,2.5,5.25
+10000097,Latoya,Gren,2017-08-15 15:31:38,The Overlook at Oxon Run,Produce,Peaches,1.5,2,3
+10000099,Charlotte,Pearson,2017-07-20 19:53:25,Community of Hope/Bellevue Library,Produce,Blackberries,2,3.5,7
+10000099,Charlotte,Pearson,2017-07-20 19:53:25,Community of Hope/Bellevue Library,Produce,Cantaloupe,1.667,1.5,2.5
+10000099,Charlotte,Pearson,2017-07-20 19:53:25,Community of Hope/Bellevue Library,Produce,Nectarines,1,2.5,2.5
+10000099,Charlotte,Pearson,2017-08-09 19:53:00,Hendley Elementary,Produce,Apples,1.31,2,2.62
+10000099,Charlotte,Pearson,2017-08-09 19:53:00,Hendley Elementary,Produce,Nectarines,1.52,2.5,3.8
+10000099,Charlotte,Pearson,2017-08-09 19:53:00,Hendley Elementary,Produce,Peaches,1.87,2,3.74
+10000099,Charlotte,Pearson,2017-08-09 19:53:00,Hendley Elementary,Produce,Plums,0.6,3,1.8
+10000105,Maria,Seals,2017-07-21 14:34:56,Deanwood Recreation Center,Produce,Blueberries,1,3.5,3.5
+10000105,Maria,Seals,2017-07-21 14:34:56,Deanwood Recreation Center,Produce,Corn,3,0.66,1.98
+10000105,Maria,Seals,2017-07-21 14:34:56,Deanwood Recreation Center,Produce,Peaches,1.4,2.5,3.5
+10000105,Maria,Seals,2017-07-21 14:34:56,Deanwood Recreation Center,Produce,Raspberries,1,3,3
+10000109,Roy,Johnson,2017-07-06 15:11:41,Congress Heights Senior Wellness Center,Meat,Pork Spareribs,1.88,5,9.4
+10000109,Roy,Johnson,2017-07-06 15:11:41,Congress Heights Senior Wellness Center,Meat,Turkey Wings,3.1,4,12.4
+10000109,Roy,Johnson,2017-07-06 15:11:41,Congress Heights Senior Wellness Center,Produce,Jalapenos,1,3,3
+10000109,Roy,Johnson,2017-07-06 15:11:41,Congress Heights Senior Wellness Center,Produce,Nectarines,1.1,2.5,2.75
+10000109,Roy,Johnson,2017-07-06 15:11:41,Congress Heights Senior Wellness Center,Produce,Onion (bulb),0.9,1.5,1.35
+10000127,Antoinette,Prescilla,2017-07-26 20:05:38,Hendley Elementary,Produce,Broccoli,1.03,3,3.09
+10000127,Antoinette,Prescilla,2017-07-26 20:05:38,Hendley Elementary,Produce,Okra (Pound),0.72,4,2.88
+10000127,Antoinette,Prescilla,2017-07-26 20:05:38,Hendley Elementary,Produce,Peaches,2.09,2.5,5.23
+10000127,Antoinette,Prescilla,2017-07-26 20:05:38,Hendley Elementary,Produce,Squash (Summer),0.8,2,1.6
+10000129,Lorna,Fleming,2017-06-30 20:58:18,Barry Farm Recreation Center,Produce,Blueberries,2,3.5,7
+10000129,Lorna,Fleming,2017-06-30 20:58:18,Barry Farm Recreation Center,Produce,Cherries (Sweet),1,5,5
+10000129,Lorna,Fleming,2017-06-30 20:58:18,Barry Farm Recreation Center,Produce,Generic Produce,3,1,3
+10000129,Lorna,Fleming,2017-06-30 20:58:18,Barry Farm Recreation Center,Produce,Scallion/Green Onion,1,2,2
+10000129,Lorna,Fleming,2017-07-07 20:41:34,Barry Farm Recreation Center,Eggs,Brown - Pastured,1,5,5
+10000129,Lorna,Fleming,2017-07-07 20:41:34,Barry Farm Recreation Center,Meat,Pork Spareribs,2.62,5,13.1
+10000129,Lorna,Fleming,2017-07-07 20:41:34,Barry Farm Recreation Center,Produce,Cherries (Sweet),1,5,5
+10000129,Lorna,Fleming,2017-07-07 20:41:34,Barry Farm Recreation Center,Produce,Onion (bulb),1.44,1.5,2.16
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Beets - Bunched,1,2.5,2.5
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Cucumber,0.5,1.5,0.75
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Garlic,0.12,10,1.2
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Jalapenos,0.1,3,0.3
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Onion (bulb),0.6,1.5,0.9
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Peaches,1.04,2.5,2.6
+10000129,Lorna,Fleming,2017-07-14 20:24:21,Barry Farm Recreation Center,Produce,Salad Mix,1,3.5,3.5
+10000141,Jacquie,Lemons,2017-07-20 21:16:42,Community of Hope/Bellevue Library,Produce,Nectarines,2.53,2.5,6.33
+10000141,Jacquie,Lemons,2017-08-10 20:08:38,Community of Hope/Bellevue Library,Produce,Peaches,1.95,2,3.9
+10000141,Jacquie,Lemons,2017-08-10 20:08:38,Community of Hope/Bellevue Library,Produce,Peaches,1.85,2,3.7
+10000151,Karen,Young,2017-08-10 20:26:55,Community of Hope/Bellevue Library,Produce,Asian Pears,2.08,2,4.16
+10000151,Karen,Young,2017-08-10 20:26:55,Community of Hope/Bellevue Library,Produce,Asian Pears,2.06,2,4.12
+10000151,Karen,Young,2017-08-10 20:26:55,Community of Hope/Bellevue Library,Produce,Peaches,2.2,2,4.4
+10000160,Shirely,Bush,2017-08-03 21:25:58,Community of Hope/Bellevue Library,Produce,Blackberries,1,3.5,3.5
+10000160,Shirely,Bush,2017-08-03 21:25:58,Community of Hope/Bellevue Library,Produce,Blueberries,1,3.5,3.5
+10000160,Shirely,Bush,2017-08-03 21:25:58,Community of Hope/Bellevue Library,Produce,Watermelon (Small),10.2,1,10.2
+10000162,Charmaine,Moore,2017-07-19 20:08:29,Hendley Elementary,Produce,Cucumber,1.16,1.5,1.74
+10000162,Charmaine,Moore,2017-07-26 19:33:32,Hendley Elementary,Produce,Blueberries,1,3.5,3.5
+10000162,Charmaine,Moore,2017-07-26 19:33:32,Hendley Elementary,Produce,Onion (bulb),2,1.5,3
+10000162,Charmaine,Moore,2017-08-02 20:19:17,Hendley Elementary,Produce,Apples,1,2,2
+10000162,Charmaine,Moore,2017-08-02 20:19:17,Hendley Elementary,Produce,Apples,4.26,2,8.52
+10000162,Charmaine,Moore,2017-08-02 20:19:17,Hendley Elementary,Produce,Apples,0.81,2,1.62
+10000174,Verter,Smith,2017-07-20 20:22:04,Community of Hope/Bellevue Library,Produce,Apples,0.88,2.5,2.2
+10000174,Verter,Smith,2017-07-20 20:22:04,Community of Hope/Bellevue Library,Produce,Garlic,0.2,10,2
+10000174,Verter,Smith,2017-07-20 20:22:04,Community of Hope/Bellevue Library,Produce,Nectarines,2.228,2.5,5.57
+10000174,Verter,Smith,2017-07-20 20:22:04,Community of Hope/Bellevue Library,Produce,Salad Mix,1,3.5,3.5
+10000174,Verter,Smith,2017-07-20 20:22:04,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.49,2.5,3.73
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Apples,1.05,2.5,2.63
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Beans (Green),1.06,2,2.12
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Blackberries,1,3.5,3.5
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Blueberries,1,3.5,3.5
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Peaches,1.42,2.5,3.55
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Peaches,1.8,2.5,4.5
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Peppers (Bell),0.65,3,1.95
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Squash (Summer),0.8,2,1.6
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Swiss Chard,0.31,2.5,0.78
+10000174,Verter,Smith,2017-07-27 21:12:14,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),0.97,2.5,2.43
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Apples,0.99,2,1.98
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Asian Pears,0.4,2,0.8
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Asian Pears,1.16,2,2.32
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Nectarines,1.04,2.5,2.6
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Peaches,1.3,2,2.6
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Peaches,1.63,2,3.26
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Peppers (Bell),0.57,3,1.71
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Plums,0.79,3,2.37
+10000174,Verter,Smith,2017-08-03 20:28:51,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.62,2.5,4.05
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Apples,0.91,2,1.82
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Asian Pears,0.73,2,1.46
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Asian Pears,1.88,2,3.76
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Cucumber,1.48,1.5,2.22
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Peaches,0.98,2,1.96
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Plums,0.86,3,2.58
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Salad Mix,1,2.5,2.5
+10000174,Verter,Smith,2017-08-10 20:46:59,Community of Hope/Bellevue Library,Produce,Watermelon (Small),6.45,1,6.45
+10000177,Emily,Best,2017-07-26 20:31:22,Hendley Elementary,Produce,Collards,2.71,2.5,6.78
+10000177,Emily,Best,2017-07-26 20:31:22,Hendley Elementary,Produce,Kale,2.59,2.5,6.48
+10000177,Emily,Best,2017-07-26 20:31:22,Hendley Elementary,Produce,Peaches,1.54,2.5,3.85
+10000210,Naomi,Clark,2017-07-27 20:19:11,Community of Hope/Bellevue Library,Produce,Celery,1,2.5,2.5
+10000210,Naomi,Clark,2017-07-27 20:19:11,Community of Hope/Bellevue Library,Produce,Okra (Pound),1.4,4,5.6
+10000210,Naomi,Clark,2017-07-27 20:19:11,Community of Hope/Bellevue Library,Produce,Peaches,0.76,2.5,1.9
+10000210,Naomi,Clark,2017-07-27 20:19:11,Community of Hope/Bellevue Library,Produce,Scallion/Green Onion,1,2,2
+10000210,Naomi,Clark,2017-08-03 14:43:54,Congress Heights Senior Wellness Center,Produce,Broccoli,0.55,3,1.65
+10000210,Naomi,Clark,2017-08-03 14:43:54,Congress Heights Senior Wellness Center,Produce,Lettuce,1,1.5,1.5
+10000210,Naomi,Clark,2017-08-03 14:43:54,Congress Heights Senior Wellness Center,Produce,Nectarines,2.1,2.5,5.25
+10000210,Naomi,Clark,2017-08-03 14:43:54,Congress Heights Senior Wellness Center,Produce,Peaches,0.9,2,1.8
+10000210,Naomi,Clark,2017-08-03 14:43:54,Congress Heights Senior Wellness Center,Produce,Scallion/Green Onion,1,2,2
+10000210,Naomi,Clark,2017-08-03 19:43:07,Community of Hope/Bellevue Library,Produce,Okra (Pound),1.68,4,6.72
+10000210,Naomi,Clark,2017-08-03 19:43:07,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),0.4,2.5,1
+10000210,Naomi,Clark,2017-08-04 16:15:45,United Medical Center,Produce,Celery,1,2.5,2.5
+10000210,Naomi,Clark,2017-08-10 19:52:27,Community of Hope/Bellevue Library,Produce,Beans (Green),1.75,2,3.5
+10000211,Margaret,Newton,2017-07-20 19:42:25,Community of Hope/Bellevue Library,Produce,Apples,0.45,2.5,1.13
+10000211,Margaret,Newton,2017-07-20 19:42:25,Community of Hope/Bellevue Library,Produce,Peaches,2.15,2.5,5.38
+10000211,Margaret,Newton,2017-07-20 19:42:25,Community of Hope/Bellevue Library,Produce,Peaches,1.1,2.5,2.75
+10000211,Margaret,Newton,2017-07-20 19:42:25,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.11,2.5,2.78
+10000211,Margaret,Newton,2017-08-03 19:17:24,Community of Hope/Bellevue Library,Produce,Apples,1.93,2,3.86
+10000211,Margaret,Newton,2017-08-03 19:17:24,Community of Hope/Bellevue Library,Produce,Onion (bulb),1.75,1.5,2.63
+10000211,Margaret,Newton,2017-08-03 19:17:24,Community of Hope/Bellevue Library,Produce,Peaches,1.9,2,3.8
+10000211,Margaret,Newton,2017-08-03 19:17:24,Community of Hope/Bellevue Library,Produce,Peaches,0.9,2,1.8
+10000214,Thovonda,Brown,2017-07-26 21:42:39,Hendley Elementary,Produce,Apples,1.57,2.5,3.93
+10000214,Thovonda,Brown,2017-07-26 21:42:39,Hendley Elementary,Produce,Blueberries,1,3.5,3.5
+10000214,Thovonda,Brown,2017-07-26 21:42:39,Hendley Elementary,Produce,Broccoli,1.71,3,5.13
+10000214,Thovonda,Brown,2017-07-26 21:42:39,Hendley Elementary,Produce,Peaches,3.11,2.5,7.78
+10000214,Thovonda,Brown,2017-07-26 21:42:39,Hendley Elementary,Produce,Peaches,1.96,2.5,4.9
+10000214,Thovonda,Brown,2017-07-26 21:42:39,Hendley Elementary,Produce,Raspberries,4,3,12
+10000214,Thovonda,Brown,2017-08-04 20:35:19,Barry Farm Recreation Center,Produce,Apples,1.8,2,3.6
+10000214,Thovonda,Brown,2017-08-04 20:35:19,Barry Farm Recreation Center,Produce,Cucumber,0.8,1.5,1.2
+10000214,Thovonda,Brown,2017-08-04 20:35:19,Barry Farm Recreation Center,Produce,Nectarines,0.92,2.5,2.3
+10000214,Thovonda,Brown,2017-08-04 20:35:19,Barry Farm Recreation Center,Produce,Peaches,0.7,2,1.4
+10000214,Thovonda,Brown,2017-08-04 20:35:19,Barry Farm Recreation Center,Produce,Peaches,1.75,2,3.5
+10000216,Joycene,Moore,2017-07-19 20:03:43,Hendley Elementary,Produce,Apples,1.72,2.5,4.3
+10000216,Joycene,Moore,2017-07-19 20:03:43,Hendley Elementary,Produce,Kale,0.3,2.5,0.75
+10000216,Joycene,Moore,2017-07-19 20:03:43,Hendley Elementary,Produce,Onion (bulb),2.86,1.5,4.29
+10000216,Joycene,Moore,2017-07-19 20:03:43,Hendley Elementary,Produce,Peppers (Bell),2.33,3,6.99
+10000216,Joycene,Moore,2017-07-19 20:03:43,Hendley Elementary,Produce,Salad Mix,1,2.5,2.5
+10000216,Joycene,Moore,2017-07-19 20:03:43,Hendley Elementary,Produce,Tomatoes (Cherry) ,1,2.5,2.5
+10000216,Joycene,Moore,2017-07-26 19:36:28,Hendley Elementary,Produce,Peaches,2.9,2.5,7.25
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Cantaloupe,1,1.5,1.5
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Collards,1,2.5,2.5
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Kale,0.6,2.5,1.5
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Peaches,0.8,2.5,2
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Peaches,0.25,2.5,0.63
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Salad Mix,1,3.5,3.5
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Squash (Summer),0.5,2,1
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Tomatoes (Red),1.5,2.5,3.75
+10000217,Eleanor ,Jones,2017-07-19 19:42:18,Hendley Elementary,Produce,Tomatoes (Red),1,2.5,2.5
+10000217,Eleanor ,Jones,2017-07-20 19:48:15,Community of Hope/Bellevue Library,Produce,Cantaloupe,3.74,1.5,5.61
+10000217,Eleanor ,Jones,2017-07-20 19:48:15,Community of Hope/Bellevue Library,Produce,Nectarines,1.5,2.5,3.75
+10000217,Eleanor ,Jones,2017-07-20 19:48:15,Community of Hope/Bellevue Library,Produce,Peaches,2.1,2.5,5.25
+10000217,Eleanor ,Jones,2017-07-20 19:48:15,Community of Hope/Bellevue Library,Produce,Salad Mix,2,3.5,7
+10000217,Eleanor ,Jones,2017-07-20 19:48:15,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.97,2.5,4.93
+10000217,Eleanor ,Jones,2017-07-27 14:21:44,Congress Heights Senior Wellness Center,Produce,Cantaloupe,13,1,13
+10000217,Eleanor ,Jones,2017-07-27 14:21:44,Congress Heights Senior Wellness Center,Produce,Cucumber,0.9,1.5,1.35
+10000217,Eleanor ,Jones,2017-07-27 14:21:44,Congress Heights Senior Wellness Center,Produce,Garlic,0.06,10,0.6
+10000217,Eleanor ,Jones,2017-07-27 14:21:44,Congress Heights Senior Wellness Center,Produce,Nectarines,1.12,2.5,2.8
+10000217,Eleanor ,Jones,2017-07-27 14:21:44,Congress Heights Senior Wellness Center,Produce,Peaches,2.1,2.5,5.25
+10000217,Eleanor ,Jones,2017-07-27 14:21:44,Congress Heights Senior Wellness Center,Produce,Tomatoes (Red),1.6,2.5,4
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Cantaloupe,2.79,1,2.79
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Cantaloupe,3.42,1,3.42
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Peaches,2.39,2,4.78
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.48,2.5,3.7
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),0.46,2.5,1.15
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Watermelon (Small),3.36,1,3.36
+10000217,Eleanor ,Jones,2017-08-10 19:21:56,Community of Hope/Bellevue Library,Produce,Watermelon (Small),3.56,1,3.56
+10000219,Lakia,Robinson,2017-07-20 20:36:38,Community of Hope/Bellevue Library,Produce,Apples,2.592,2.5,6.48
+10000219,Lakia,Robinson,2017-07-20 20:36:38,Community of Hope/Bellevue Library,Produce,Garlic,0.24,10,2.4
+10000219,Lakia,Robinson,2017-07-20 20:36:38,Community of Hope/Bellevue Library,Produce,Jalapenos,0.19,3,0.57
+10000219,Lakia,Robinson,2017-07-20 20:36:38,Community of Hope/Bellevue Library,Produce,Kale,0.6,2.5,1.5
+10000219,Lakia,Robinson,2017-07-20 20:36:38,Community of Hope/Bellevue Library,Produce,Onion (bulb),0.7,1.5,1.05
+10000219,Lakia,Robinson,2017-07-21 20:01:58,Barry Farm Recreation Center,Produce,Garlic,0.4,10,4
+10000219,Lakia,Robinson,2017-07-21 20:01:58,Barry Farm Recreation Center,Produce,Nectarines,0.6,2.5,1.5
+10000219,Lakia,Robinson,2017-07-21 20:01:58,Barry Farm Recreation Center,Produce,Peaches,0.6,2.5,1.5
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Broccoli,0.91,3,2.73
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Cantaloupe,3.47,1,3.47
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Kale,0.58,2.5,1.45
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Nectarines,0.96,2.5,2.4
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Peaches,1.3,2,2.6
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Peppers (Bell),1.28,3,3.84
+10000219,Lakia,Robinson,2017-08-03 20:11:24,Community of Hope/Bellevue Library,Produce,Watermelon (Small),5.44,1,5.44
+10000220,Russell,Jackson,2017-07-26 21:45:51,Hendley Elementary,Produce,Corn,3,0.66,1.98
+10000220,Russell,Jackson,2017-08-04 20:38:07,Barry Farm Recreation Center,Produce,Blackberries,2,3.5,7
+10000220,Russell,Jackson,2017-08-04 20:38:07,Barry Farm Recreation Center,Produce,Blueberries,1,3.5,3.5
+10000220,Russell,Jackson,2017-08-04 20:38:07,Barry Farm Recreation Center,Produce,Plums,0.167,3,0.5
+10000220,Russell,Jackson,2017-08-04 20:38:07,Barry Farm Recreation Center,Produce,Raspberries,2,3,6
+10000222,Constance,Boulware,2017-07-20 14:41:19,Congress Heights Senior Wellness Center,Produce,Cantaloupe,1.33,1.5,2
+10000222,Constance,Boulware,2017-07-27 20:17:10,Community of Hope/Bellevue Library,Produce,Okra (Pound),1.2,4,4.8
+10000222,Constance,Boulware,2017-07-27 20:17:10,Community of Hope/Bellevue Library,Produce,Raspberries,1,3,3
+10000222,Constance,Boulware,2017-08-03 15:37:44,Congress Heights Senior Wellness Center,Produce,Beets - Bunched,1,2.5,2.5
+10000222,Constance,Boulware,2017-08-03 15:37:44,Congress Heights Senior Wellness Center,Produce,Cucumber,0.85,1.5,1.28
+10000222,Constance,Boulware,2017-08-03 15:37:44,Congress Heights Senior Wellness Center,Produce,Tomatoes (Cherry) ,1,2.5,2.5
+10000222,Constance,Boulware,2017-08-03 15:37:44,Congress Heights Senior Wellness Center,Produce,Tomatoes (Red),0.9,2.5,2.25
+10000225,Carolyn ,Williams,2017-07-20 19:51:04,Community of Hope/Bellevue Library,Produce,Cucumber,1.3,1.5,1.95
+10000225,Carolyn ,Williams,2017-07-20 19:51:04,Community of Hope/Bellevue Library,Produce,Peaches,1.8,2.5,4.5
+10000225,Carolyn ,Williams,2017-07-20 19:51:04,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.22,2.5,3.05
+10000225,Carolyn ,Williams,2017-07-20 19:51:04,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1,2.5,2.5
+10000228,Judy,Wiggins,2017-07-20 19:39:51,Community of Hope/Bellevue Library,Produce,Nectarines,1.2,2.5,3
+10000228,Judy,Wiggins,2017-07-20 19:39:51,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.69,2.5,4.23
+10000228,Judy,Wiggins,2017-08-03 19:30:48,Community of Hope/Bellevue Library,Produce,Peaches,0.95,2,1.9
+10000228,Judy,Wiggins,2017-08-03 19:30:48,Community of Hope/Bellevue Library,Produce,Tomatoes (Red),1.35,2.5,3.38
