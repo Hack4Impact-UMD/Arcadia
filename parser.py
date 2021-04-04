@@ -4,5 +4,5 @@ from datetime import datetime as dt
 # Imports the CSV file into a pandas DataFrame
 customer_df = pd.read_csv('data/data_pull1.csv')
 
-# Conversion of the string date and time into a python DateTime object
-datetime_object = dt.strptime('2017-07-20 19:57:20', '%Y-%m-%d %H:%M:%S')
+# Iterate over DF and convert the string of date and time into DateTime objects
+customer_df['Visit Date'] = customer_df.apply(lambda row: dt.strptime(row['Visit Date'], '%Y-%m-%d %H:%M:%S'), axis=1)
