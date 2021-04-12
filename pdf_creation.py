@@ -56,9 +56,12 @@ purchases = {
                 'Watermelon (Small)' : '6.10'
             }
 
+prev_x = pdf.get_x()
+pdf.cell(70, 17*5 +, '', 0, 0, 'C', True)
+pdf.set_x(prev_x)
 for purchase in purchases:
-    pdf.cell(35, 5, purchase, 0, 0, 'L', True)
-    pdf.cell(35, 5, f"${purchases[purchase]}", 0, 1, 'L', True)
+    pdf.cell(35, 5, purchase, 0, 0, 'L', False)
+    pdf.cell(35, 5, f"${purchases[purchase]}", 0, 1, 'L', False)
 
 pdf.set_xy(starting_x + 80, starting_y + 5)
 pdf.cell(90, 10, "Your Personal 2021 Eating Rainbow", 0, 1, 'C', True)
@@ -67,4 +70,4 @@ pdf.image("./piechart.png", starting_x + 92 , starting_y + 20, 70, 60, 'png')
 # Generates the PDF
 customer_name = "Example Customer"
 pdf.output(customer_name + ".pdf", 'F')
- # https://pyfpdf.readthedocs.io/en/latest/Tutorial/index.html
+# https://pyfpdf.readthedocs.io/en/latest/Tutorial/index.html
