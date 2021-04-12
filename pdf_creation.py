@@ -57,7 +57,7 @@ purchases = {
             }
 
 prev_x = pdf.get_x()
-pdf.cell(70, 17*5 +, '', 0, 0, 'C', True)
+pdf.cell(70, 17*5, '', 0, 0, 'C', True)
 pdf.set_x(prev_x)
 for purchase in purchases:
     pdf.cell(35, 5, purchase, 0, 0, 'L', False)
