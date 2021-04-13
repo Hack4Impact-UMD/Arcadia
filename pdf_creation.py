@@ -5,13 +5,16 @@ pdf.set_font('Arial', 'B', 16)
 
 # Adds the title
 title="2021 Arcadia Mobile Market"
+starting_x = pdf.get_x()
 pdf.set_fill_color(0, 160, 0)
-pdf.cell(170, 10, title, 0, 1, 'C', True)
+pdf.cell(170, 20, '', 0, 0, 'C', True)
+pdf.set_x(starting_x)
+pdf.cell(170, 10, title, 0, 0, 'C', False)
 
 # Adds the purchase report below title
 member="Purchase Report: Member #12"
 pdf.set_font('Arial', 'B', 12)
-pdf.cell(170, 10, member, 0, 1, 'C', True)
+pdf.cell(170, 10, member, 0, 1, 'C', False)
 
 visits = 9
 servings =170
@@ -25,17 +28,21 @@ starting_x = pdf.get_x()
 starting_y = pdf.get_y()
 pdf.set_y(pdf.get_y() + 5)
 pdf.set_fill_color(0, 190, 0)
-pdf.cell(70, 10, "EAT A RAINBOW", 0, 1, 'C', True)
+pdf.cell(70, 40, '', 0, 0, 'C', True)
+pdf.set_x(starting_x)
+pdf.cell(70, 10, "EAT A RAINBOW", 0, 1, 'C', False)
 pdf.set_font('Arial', '', 8)
 rainbow_text = "An easy way to eat right is to fill at least half your plate with vegetables and fruits, and to try to eat all the colors of the rainbow every day, especially lots of greens. Different colors of produce have different nutrients, so eating a rainbow means you get as many as possible."
-pdf.multi_cell(70, 5, rainbow_text, 0, 'L', True)
+pdf.multi_cell(70, 5, rainbow_text, 0, 'L', False)
 
 
 pdf.set_y(pdf.get_y() + 5)
 pdf.set_fill_color(204, 85, 0)
 pdf.set_font('Arial', 'B', 12)
-pdf.cell(70, 10, "YOUR 2021 PURCHASES", 0, 1, 'C', True)
-pdf.set_font('Arial', '', 8)
+pdf.cell(70, 16*5 + 30, '', 0, 0, 'C', True)
+pdf.set_x(starting_x)
+pdf.cell(70, 10, "YOUR 2021 PURCHASES", 0, 1, 'C', False)
+pdf.set_font('Arial', '', 10)
 purchases = {
                 'Asian Pears' : '6.25',
                 'Blueberries' : '3.50',
@@ -56,16 +63,44 @@ purchases = {
                 'Watermelon (Small)' : '6.10'
             }
 
-prev_x = pdf.get_x()
-pdf.cell(70, 17*5, '', 0, 0, 'C', True)
-pdf.set_x(prev_x)
 for purchase in purchases:
     pdf.cell(35, 5, purchase, 0, 0, 'L', False)
     pdf.cell(35, 5, f"${purchases[purchase]}", 0, 1, 'L', False)
 
-pdf.set_xy(starting_x + 80, starting_y + 5)
-pdf.cell(90, 10, "Your Personal 2021 Eating Rainbow", 0, 1, 'C', True)
-pdf.image("./piechart.png", starting_x + 92 , starting_y + 20, 70, 60, 'png')
+second_col_x = starting_x + 80
+pdf.set_xy(second_col_x, starting_y + 5)
+pdf.set_fill_color(234,182,118)
+pdf.cell(90, 40, '', 0, 0, 'C', True)
+pdf.set_x(second_col_x)
+pdf.cell(90, 10, "Your Personal 2021 Eating Rainbow", 0, 1, 'C', False)
+rainbow_info="THIS IS YOUR PERSONAL EATING RAINBOW CHART, BASED ON THE PERCENTAGE OF COLORS OF PRODUCE YOU PURCHASED AT THE MOBILE MARKET LAST YEAR. TURN THE PAGE FOR SUGGESTIONS ON WHAT VEGETABLES TO ADD TO MAKE YOUR DIET EVEN HEALTHIER!"
+pdf.set_x(second_col_x)
+pdf.multi_cell(90, 5, rainbow_info, 0, 'L', False)
+pdf.set_y(pdf.get_y() + 5)
+pdf.image("./piechart.png", second_col_x + 12 , starting_y + 45, 70, 60, 'png')
+
+total_spent = 82.20
+pdf.set_xy(second_col_x, starting_y + 110)
+pdf.set_fill_color(0, 190, 0)
+pdf.cell(90, 50, '', 0, 0, 'C', True)
+spent_info=f"You spent ${total_spent} in nutrition benefits at the Mobile Market in 2017, including:"
+pdf.set_xy(second_col_x, starting_y + 115)
+pdf.set_font('Arial', '', 14)
+pdf.multi_cell(90, 5, spent_info, 0, 'C', False)
+
+benefits = {
+                'SNAP' : '0.00',
+                'PPP' : '64.20',
+                'Loyalty' : '18.00',
+                'WIC' : '0.00',
+                'Sr FMNP' : '0.00',
+            }
+
+pdf.set_y(pdf.get_y() + 5)
+for benefit in benefits:
+    pdf.set_x(second_col_x)
+    pdf.cell(45, 5, benefit, 0, 0, 'L', False)
+    pdf.cell(45, 5, f"${benefits[benefit]}", 0, 1, 'L', False)
 
 # Generates the PDF
 customer_name = "Example Customer"
