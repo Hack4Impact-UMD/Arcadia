@@ -149,16 +149,19 @@ starting_x = 15
 # Adds thank you text
 pdf.set_font('Arial', '', 12)
 pdf.set_y(pdf.get_y() + 5)
+add_more1 = "BROWN/WHITE"
+add_more2 = "BLUE/PURPLE"
 thank_you_text=("Thanks for being a Loyalty Member at the Arcadia Mobile Market! "
-            "Based on your purchases last year, consider adding more Brown/White "
-            " and Blue/Purple to your diet this season to make sure you get all "
+            f"Based on your purchases last year, consider adding more {add_more1} "
+            f"and {add_more2} to your diet this season to make sure you get all "
             " the nutrients you need for a healthy diet!")
 pdf.multi_cell(120, 5, thank_you_text, 0, 'J', False)
 
 # Adds the benefits reminder box to the right of the thank you text
 pdf.set_y(pdf.get_y() - 25)
 pdf.set_x(pdf.get_x() + 125)
-boxText="Remember, the Arcadia Mobile Market doubles your SNAP, WIC, and SR FMNP purchases so you get even more great food for your money!"
+boxText=("Remember, the Arcadia Mobile Market doubles your SNAP, WIC, "
+         "and SR FMNP purchases so you get even more great food for your money!")
 pdf.multi_cell(61, 5, boxText, 1, 1, 'J', False)
 
 pdf.line(pdf.get_x(), pdf.get_y() + 5, pdf.get_x() + 186, pdf.get_y() + 5)
@@ -168,12 +171,12 @@ pdf.set_y(pdf.get_y() + 10)
 redX = pdf.get_x()
 redY = pdf.get_y()
 pdf.set_fill_color(255, 0, 0)
-pdf.cell(70, 47, '', 0 , 1, 'C', True)
+pdf.cell(70, 52, '', 0 , 1, 'C', True)
 pdf.set_x(redX)
 pdf.set_y(redY)
 pdf.set_font('Arial', 'B', 14)
 pdf.cell(70, 10, "RED", 0, 1, 'C', False)
-red_box_text=("Good for the heart and can help to lower the risk of heart disease.\n\n"
+red_box_text=("Good for the heart and can help to lower the risk of heart   disease.\n\n"
             "TIP: Ketchup is NOT a vegetable\n"
             "TRY: Beets, red pepper, red apples, tomatoes")
 pdf.set_xy(redX + 2, redY + 10)
@@ -186,9 +189,9 @@ pdf.set_x(pdf.get_x() + 75)
 tanY = pdf.get_y()
 tanX = pdf.get_x()
 pdf.set_fill_color(210, 180, 140)
-pdf.cell(111, 47, '', 0 , 1, 'C', True)
+pdf.cell(111, 52, '', 0 , 1, 'C', True)
 brown_box_text=("Great for removing toxins from the liver and reducing inflammation "
-              "that accumulates in the body from the stresses of everyday life.\n"
+              "that accumulates in the body from the stresses of everyday life.\n\n"
               "TIP: Don't confuse white-colored natural foods with highly processed "
               "foods that are white in color like rice, white bread, and pudding\n"
               "TRY: Garlic, jicama, parsnips, mushrooms, cauliflower")
@@ -200,58 +203,55 @@ pdf.set_font('Arial', '', 12)
 pdf.multi_cell(107, 5, brown_box_text, 0, 'L', False)
 
 # Adds the green/light green box
-greenY = tanY + 52
+greenY = tanY + 57
 pdf.set_y(greenY)
-tanY = pdf.get_y()
-tanX = pdf.get_x()
+greenX = pdf.get_x()
 pdf.set_fill_color(0, 180, 0)
-pdf.cell(125, 62, '', 0 , 1, 'C', True)
+pdf.cell(186, 50, '', 0 , 1, 'C', True)
 green_box_text=("Great for fighting cancer and maintaining strong bones and joints.\n\n"
                 "TIP: When eating out, most salads are made from iceberg lettuce which "
                 "is very light green in color and contains very little nutrition. Instead "
                 "ask for a salad made from romaine, spinach or kale which is much more nutritious.\n"
-                "TRY: Kale, spinach, asparagus, mustard greens, arugulaand pudding\n"
+                "TRY: Kale, spinach, asparagus, mustard greens, arugula and pudding\n"
                 "TRY: Garlic, jicama, parsnips, mushrooms, cauliflower")
-pdf.set_xy(tanX, tanY)
+pdf.set_xy(greenX, greenY)
 pdf.set_font('Arial', 'B', 14)
-pdf.cell(125, 10, "GREEN/LIGHT GREEN", 0 , 1, 'C', False)
-pdf.set_xy(tanX + 2, pdf.get_y())
+pdf.cell(186, 10, "GREEN/LIGHT GREEN", 0 , 1, 'C', False)
+pdf.set_xy(greenX + 2, pdf.get_y())
 pdf.set_font('Arial', '', 12)
-pdf.multi_cell(121, 5, green_box_text, 0, 'L', False)
+pdf.multi_cell(182, 5, green_box_text, 0, 'L', False)
 
 # Adds the blue/purple box
-purpleY = greenY + 66
+purpleY = greenY + 55
 pdf.set_y(purpleY)
-tanY = pdf.get_y()
-tanX = pdf.get_x()
+purpleX = pdf.get_x()
 pdf.set_fill_color(163, 88, 232)
-pdf.cell(125, 37, '', 0 , 1, 'C', True)
+pdf.cell(75, 45, '', 0 , 1, 'C', True)
 purple_box_text=("Helps to stabilize blood pressure, lower cholesterol, and improve memory.\n\n"
                 "TRY: Purple potato, red cabbage, blueberries, eggplant, plums")
-pdf.set_xy(tanX, tanY)
+pdf.set_xy(purpleX, purpleY)
 pdf.set_font('Arial', 'B', 14)
-pdf.cell(125, 10, "BLUE/PURPLE", 0 , 1, 'C', False)
-pdf.set_xy(tanX + 2, pdf.get_y())
+pdf.cell(75, 10, "BLUE/PURPLE", 0 , 1, 'C', False)
+pdf.set_xy(purpleX + 2, pdf.get_y())
 pdf.set_font('Arial', '', 12)
-pdf.multi_cell(121, 5, purple_box_text, 0, 'L', False)
+pdf.multi_cell(71, 5, purple_box_text, 0, 'L', False)
 
 # Adds the orange/yellow box
-yellowY = greenY
+yellowY = purpleY
 pdf.set_y(yellowY)
-tanY = pdf.get_y()
-tanX = pdf.get_x()
+yellowX = pdf.get_x() + 80
 pdf.set_fill_color(223, 226, 43)
-pdf.set_xy(tanX + 130, tanY)
-pdf.cell(56, 101, '', 0 , 1, 'C', True)
+pdf.set_xy(yellowX, yellowY)
+pdf.cell(106, 45, '', 0 , 1, 'C', True)
 yellow_box_text=("High in Vitamin C which helps boost the immune system. "
-                 "They are also important for eye and vision health = so eat those carrots!\n\n"
+                 "They are also important for eye and vision health - so eat those carrots!\n\n"
                  "TRY: Carrots, winter squash, sweet potatoes, yellow peppers")
 pdf.set_font('Arial', 'B', 14)
-pdf.set_xy(tanX + 132, tanY)
-pdf.cell(56, 10, "YELLOW", 0 , 1, 'C', False)
+pdf.set_xy(yellowX, yellowY)
+pdf.cell(106, 10, "YELLOW", 0 , 1, 'C', False)
 pdf.set_font('Arial', '', 12)
-pdf.set_xy(tanX + 132, tanY + 10)
-pdf.multi_cell(52, 5, yellow_box_text, 0, 'L', False)
+pdf.set_xy(yellowX + 2, yellowY + 10)
+pdf.multi_cell(102, 5, yellow_box_text, 0, 'L', False)
 
 # Adds Arcadia's contact info
 add_contact_info()
