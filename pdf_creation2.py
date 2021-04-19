@@ -19,19 +19,19 @@ pdf.set_font('Arial', 'B', 12)
 pdf.set_y(titleY+10)
 pdf.cell(170, 10, member, 0, 1, 'C', False)
 
-#Prints Thank You Text
+# Prints Thank You Text
 pdf.set_y(pdf.get_y() + 10)
 pdf.set_font('Arial', '', 10)
 thankYouText="Thanks for being a Loyalty Member at the Arcadia Mobile Market! Based on your purchases last year, consider adding more Brown/White and Blue/Purple to your diet this season to make sure you get all the nutrients you need for a healthy diet!"
 pdf.multi_cell(120, 5, thankYouText, 0, 0, 'J', False)
 
-#Print white box next to it
+# Print white box next to it
 pdf.set_y(pdf.get_y()-25)
 pdf.set_x(pdf.get_x()+120)
 boxText="Remember, the Arcadia Mobile Market doubles your SNAP, WIC, and SR FMNP purchases so you get even more great food for your money!"
 pdf.multi_cell(50, 5, boxText, 1, 1, 'J', False)
 
-#Draw Line
+# Draw Line
 pdf.line(0, 80, 1000, 82)
 
 # Draw Red Box
@@ -47,7 +47,7 @@ redBoxText="Good for the heart and can help to lower the risk of heart disease. 
 pdf.set_y(redY+5)
 pdf.multi_cell(80, 5, redBoxText, 0, 'L', False)
 
-#Draw Tan Box
+# Draw Tan Box
 pdf.set_y(pdf.get_y() - 30)
 pdf.set_x(pdf.get_x() + 90)
 tanY = pdf.get_y()
