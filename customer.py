@@ -1,3 +1,5 @@
+from purchase import Purchase
+
 class Customer:
     def __init__(self, member_id, first_name, last_name):
         self.member_id = member_id
@@ -5,7 +7,7 @@ class Customer:
         self.last_name = last_name
         self.purchase_dict = {}
         self.visits = 0
-        self.total_servings = 0
+        #self.total_servings = 0
     
     def total_price(self):
         sum = 0
@@ -13,7 +15,15 @@ class Customer:
             sum += self.purchase_dict[key].price #key is a produce name; value corresponding to key is a purchase obj
         return sum
         
+    def total_servings(self):
+        sum = 0
+        for key in self.purchase_dict:
+            sum += self.purchase_dict[key].servings #key is a produce name; value corresponding to key is a purchase obj
+        return sum
+
+    
     def color(self):
+        # check to make sure colors will be parsed correctly
         pie_dict = {
             "red": 0,
             "blue": 0,
