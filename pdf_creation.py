@@ -1,4 +1,54 @@
 from fpdf import FPDF 
+import pandas as pd
+import numpy as np
+from customer import Customer
+from purchase import Purchase
+from produce import Produce
+from datetime import datetime as dt
+
+# Imports the CSV file into a pandas DataFrame
+customer_df = pd.read_csv('data/data_pull1.csv')
+customer_dic = {}
+produce_dic = {}
+
+product_df = pd.read_csv('data/product_list.csv', skiprows=1)
+
+# Drop unnecessary first column and add column names
+product_df = product_df.drop('Unnamed: 0', axis=1)
+product_df.columns = ['Category', 'Product', 'Unit', 'Color', 'Serving Size', 'Unit Weight', 'Correction', 'Comments']
+
+# Create produce_dic with key [name of produce] and value [Produce object]
+# Note: Unit Weight is not in the product_list csv, so it is default set to NaN
+for index, row in product_df.iterrows():
+    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], np.NaN)
+
+
+
+# Iterate over DF and convert the string of date and time into DateTime objects
+customer_df['Visit Date'] = customer_df.apply(lambda row: dt.strptime(row['Visit Date'], '%Y-%m-%d %H:%M:%S'), axis=1)
+
+# Iterate over rows and create customer dictionary and corresponding purchase dictionaries
+for index, row in customer_df.iterrows():
+    try:
+        produce = produce_dic[row['Product'].rstrip()]
+    except KeyError:
+        # If produce is not in the produce list, create a Produce object with missing fields:
+        # color="", serving_size=NaN, unit_weight=NaN, unit_price=actual unit price
+        print('\"' + row['Product'].rstrip() + '" is not a produce in the list')
+        produce = Produce(row['Product'].rstrip(), "", np.nan, np.nan, 0)
+    produce.unit_price = row['Unit Price']
+
+    # Add Customer object to dictionary if customer is not already in it
+    loyalty_number = row['Loyalty Number']
+    if loyalty_number not in customer_dic:
+        customer_dic[loyalty_number] = Customer(loyalty_number, row['First Name'], row['Last Name'])
+        
+    # Adds a Purchase object to Customer's purchase dictionary
+    purch = Purchase(row['Visit Date'], row['Location'], produce, row['Quantity'], row['Price'])
+    customer_dic[loyalty_number].purchase_dict[produce.name] = purch
+
+#################################################
+
 pdf = FPDF('P', 'mm', 'Letter')
 pdf.set_margins(15, 15, -1)
 
@@ -25,6 +75,9 @@ def add_contact_info():
     pdf.cell(62, 5, "info@arcadiafood.org", 0, 1, 'C', False)
     
 
+# for customer in customer_dic:
+customer_id = list(customer_dic.keys())[0]
+customer = customer_dic[customer_id]
 # FIRST PAGE
 pdf.add_page()
 pdf.set_font('Arial', 'B', 18)
@@ -34,9 +87,12 @@ add_header()
 starting_x = 15
 
 # Adds the visits, servings, and total on one line below the header
-visits = 9
-servings =170
-total = "$94.65"
+visits = customer.visits
+servings = customer.total_servings
+total = customer.total_price()
+# visits = 9 
+# servings = 170 
+# total = "$94.65"
 pdf.cell(62, 10, f"Visits: {visits}", 0, 0, 'C', False)
 pdf.cell(62, 10, f"Servings: {servings}", 0, 0, 'C', False)
 pdf.cell(62, 10, f"Total: {total}", 0, 1, 'C', False)
@@ -88,10 +144,12 @@ purchases = {
                 'Watermelon (Small)' : '6.10'
             }
 
-for purchase in purchases:
+# for purchase in purchases:
+for purchase in customer.purchase_dict:
     pdf.set_x(pdf.get_x() + 15)
     pdf.cell(40, 5, purchase, 0, 0, 'L', False)
-    pdf.cell(40, 5, f"${purchases[purchase]}", 0, 1, 'L', False)
+    # pdf.cell(40, 5, f"${purchases[purchase]}", 0, 1, 'L', False)
+    pdf.cell(40, 5, f"${customer.purchase_dict[purchase]}", 0, 1, 'L', False)
 
 # Adds the personal eating rainbow information box
 second_col_x = starting_x + 96
@@ -102,14 +160,18 @@ pdf.set_x(second_col_x)
 pdf.set_font('Arial', 'B', 14)
 pdf.cell(90, 10, "Your Personal 2021 Eating Rainbow", 0, 1, 'C', False)
 rainbow_info=("This is your personal eating rainbow chart, based on the "
-              "percentage of colors of produce you purchased at the mobile "
-              "market last year. Turn the page for suggestions on what "
-              "vegetables to add to make your diet even healthier!")
+            "percentage of colors of produce you purchased at the mobile "
+            "market last year. Turn the page for suggestions on what "
+            "vegetables to add to make your diet even healthier!")
 pdf.set_x(second_col_x + 5)
 pdf.set_font('Arial', '', 12)
 pdf.multi_cell(80, 5, rainbow_info, 0, 'J', False)
 pdf.set_y(pdf.get_y() + 5)
-pdf.image("./piechart.png", second_col_x + 10 , starting_y + 55, 80, 75, 'png')
+
+# insert MATPLOTLIB stuff
+
+image_file="piechart.png"
+pdf.image(f"./Pie-Charts/{image_file}", second_col_x + 10 , starting_y + 55, 80, 75, 'png')
 
 # Adds the benefits information box
 total_spent = 82.20
@@ -149,8 +211,28 @@ starting_x = 15
 # Adds thank you text
 pdf.set_font('Arial', '', 12)
 pdf.set_y(pdf.get_y() + 5)
-add_more1 = "BROWN/WHITE"
-add_more2 = "BLUE/PURPLE"
+
+# Calculates lowest two colors
+customer_pie = customer.color()
+
+def min_color():
+    lowest_value = min(customer_pie.values())
+    for color in customer_pie:
+        if customer_pie[color] == lowest_value:
+            del customer_pie[color]
+            return color
+
+def second_min_color():
+    lowest_value = min(customer_pie.values())
+    for color in customer_pie:
+        if customer_pie[color] == lowest_value:
+            return color
+
+
+add_more1 = min_color().upper()
+add_more2 = second_min_color().upper()
+# add_more1 = "brown/white".upper()
+# add_more2 = "blue/purple".upper()
 thank_you_text=("Thanks for being a Loyalty Member at the Arcadia Mobile Market! "
             f"Based on your purchases last year, consider adding more {add_more1} "
             f"and {add_more2} to your diet this season to make sure you get all "
@@ -161,7 +243,7 @@ pdf.multi_cell(120, 5, thank_you_text, 0, 'J', False)
 pdf.set_y(pdf.get_y() - 25)
 pdf.set_x(pdf.get_x() + 125)
 boxText=("Remember, the Arcadia Mobile Market doubles your SNAP, WIC, "
-         "and SR FMNP purchases so you get even more great food for your money!")
+        "and SR FMNP purchases so you get even more great food for your money!")
 pdf.multi_cell(61, 5, boxText, 1, 1, 'J', False)
 
 pdf.line(pdf.get_x(), pdf.get_y() + 5, pdf.get_x() + 186, pdf.get_y() + 5)
@@ -191,10 +273,10 @@ tanX = pdf.get_x()
 pdf.set_fill_color(210, 180, 140)
 pdf.cell(111, 52, '', 0 , 1, 'C', True)
 brown_box_text=("Great for removing toxins from the liver and reducing inflammation "
-              "that accumulates in the body from the stresses of everyday life.\n\n"
-              "TIP: Don't confuse white-colored natural foods with highly processed "
-              "foods that are white in color like rice, white bread, and pudding\n"
-              "TRY: Garlic, jicama, parsnips, mushrooms, cauliflower")
+            "that accumulates in the body from the stresses of everyday life.\n\n"
+            "TIP: Don't confuse white-colored natural foods with highly processed "
+            "foods that are white in color like rice, white bread, and pudding\n"
+            "TRY: Garlic, jicama, parsnips, mushrooms, cauliflower")
 pdf.set_xy(tanX, tanY)
 pdf.set_font('Arial', 'B', 14)
 pdf.cell(111, 10, "BROWN/WHITE", 0 , 1, 'C', False)
@@ -244,8 +326,8 @@ pdf.set_fill_color(223, 226, 43)
 pdf.set_xy(yellowX, yellowY)
 pdf.cell(106, 45, '', 0 , 1, 'C', True)
 yellow_box_text=("High in Vitamin C which helps boost the immune system. "
-                 "They are also important for eye and vision health - so eat those carrots!\n\n"
-                 "TRY: Carrots, winter squash, sweet potatoes, yellow peppers")
+                "They are also important for eye and vision health - so eat those carrots!\n\n"
+                "TRY: Carrots, winter squash, sweet potatoes, yellow peppers")
 pdf.set_font('Arial', 'B', 14)
 pdf.set_xy(yellowX, yellowY)
 pdf.cell(106, 10, "YELLOW", 0 , 1, 'C', False)
@@ -257,5 +339,5 @@ pdf.multi_cell(102, 5, yellow_box_text, 0, 'L', False)
 add_contact_info()
 
 # Generates the PDF using the customer's name
-customer_name = "Example Customer"
-pdf.output(customer_name + ".pdf", 'F')
+file_name = f"{customer.first_name} {customer.last_name} Report"
+pdf.output(f"Customer-PDFs/{file_name}.pdf", 'F')
