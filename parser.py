@@ -21,7 +21,7 @@ product_df.columns = ['Category', 'Product', 'Unit', 'Color', 'Serving Size', 'U
 
 # Create produce_dic with key [name of produce] and value [Produce object]
 for index, row in product_df.iterrows():
-    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], row['Correction'])
+    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], float(row['Correction'].strip("%"))/100)
 
 
 # Iterate over DF and convert the string of date and time into DateTime objects
