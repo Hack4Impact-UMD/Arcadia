@@ -46,7 +46,7 @@ for index, row in customer_df.iterrows():
     purch = Purchase(row['Visit Date'], row['Location'], produce, row['Quantity'], row['Price'])
     customer_dic[loyalty_number].purchase_dict[produce.name] = purch
 
-#################################################
+############################################################################################
 
 pdf = FPDF('P', 'mm', 'Letter')
 pdf.set_margins(15, 15, -1)
@@ -75,7 +75,7 @@ def add_contact_info():
     
 
 # for customer in customer_dic:
-customer_id = list(customer_dic.keys())[0]
+customer_id = list(customer_dic.keys())[5]
 customer = customer_dic[customer_id]
 # FIRST PAGE
 pdf.add_page()
@@ -150,7 +150,7 @@ for purchase in customer.purchase_dict:
     pdf.set_x(pdf.get_x() + 15)
     pdf.cell(40, 5, purchase, 0, 0, 'L', False)
     # pdf.cell(40, 5, f"${purchases[purchase]}", 0, 1, 'L', False)
-    pdf.cell(40, 5, f"${customer.purchase_dict[purchase].price}", 0, 1, 'L', False)
+    pdf.cell(40, 5, f"${'{:.2f}'.format(customer.purchase_dict[purchase].price)}", 0, 1, 'L', False)
 
 # Adds the personal eating rainbow information box
 second_col_x = starting_x + 96

@@ -30,11 +30,12 @@ class Customer:
             "red": 0,
             "blue/purple": 0,
             "green": 0,
-            "light_green": 0,
+            "light green": 0,
             "orange/yellow": 0,
             "brown/white": 0,
         }
         
         for key in self.purchase_dict:
-            pie_dict[self.purchase_dict[key].color] += self.purchase_dict[key].calculate_servings() #modified later depending on how servings is added to csv file
+            if self.purchase_dict[key].color != "":
+                pie_dict[self.purchase_dict[key].color] += self.purchase_dict[key].calculate_servings() #modified later depending on how servings is added to csv file
         return pie_dict
