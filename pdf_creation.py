@@ -88,14 +88,17 @@ starting_x = 15
 
 # Adds the visits, servings, and total on one line below the header
 visits = customer.visits
-servings = customer.total_servings
+servings = customer.total_servings()
 total = customer.total_price()
+print(visits)
+print(servings)
+print(total)
 # visits = 9 
 # servings = 170 
 # total = "$94.65"
 pdf.cell(62, 10, f"Visits: {visits}", 0, 0, 'C', False)
 pdf.cell(62, 10, f"Servings: {servings}", 0, 0, 'C', False)
-pdf.cell(62, 10, f"Total: {total}", 0, 1, 'C', False)
+pdf.cell(62, 10, f"Total: ${total}", 0, 1, 'C', False)
 
 pdf.line(pdf.get_x(), pdf.get_y(), pdf.get_x() + 186, pdf.get_y())
 

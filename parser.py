@@ -24,7 +24,6 @@ for index, row in product_df.iterrows():
     produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], row['Correction'])
 
 
-
 # Iterate over DF and convert the string of date and time into DateTime objects
 customer_df['Visit Date'] = customer_df.apply(lambda row: dt.strptime(row['Visit Date'], '%Y-%m-%d %H:%M:%S'), axis=1)
 
