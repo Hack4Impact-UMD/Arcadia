@@ -13,7 +13,7 @@ class Customer:
         sum = 0
         for key in self.purchase_dict:
             sum += self.purchase_dict[key].price #key is a produce name; value corresponding to key is a purchase obj
-        return sum
+        return '{:.2f}'.format(sum)
         
     def total_servings(self):
         sum = 0
