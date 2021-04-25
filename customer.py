@@ -1,3 +1,4 @@
+import numpy
 from purchase import Purchase
 
 class Customer:
@@ -18,8 +19,9 @@ class Customer:
     def total_servings(self):
         sum = 0
         for key in self.purchase_dict:
-            sum += self.purchase_dict[key].servings #key is a produce name; value corresponding to key is a purchase obj
-        return sum
+            if not numpy.isnan(self.purchase_dict[key].calculate_servings()):
+                sum += self.purchase_dict[key].calculate_servings() #key is a produce name; value corresponding to key is a purchase obj
+        return round(sum, 1)
 
     
     def color(self):
@@ -34,5 +36,5 @@ class Customer:
         }
         
         for key in self.purchase_dict:
-            pie_dict[self.purchase_dict[key].color] += self.purchase_dict[key].servings #modified later depending on how servings is added to csv file
+            pie_dict[self.purchase_dict[key].color] += self.purchase_dict[key].calculate_servings() #modified later depending on how servings is added to csv file
         return pie_dict

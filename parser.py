@@ -19,7 +19,7 @@ product_df.columns = ['Category', 'Product', 'Unit', 'Color', 'Serving Size', 'U
 # Create produce_dic with key [name of produce] and value [Produce object]
 # Note: Unit Weight is not in the product_list csv, so it is default set to NaN
 for index, row in product_df.iterrows():
-    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], np.NaN)
+    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], row['Correction'])
 
 
 # Iterate over DF and convert the string of date and time into DateTime objects

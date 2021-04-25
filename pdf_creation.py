@@ -20,8 +20,7 @@ product_df.columns = ['Category', 'Product', 'Unit', 'Color', 'Serving Size', 'U
 # Create produce_dic with key [name of produce] and value [Produce object]
 # Note: Unit Weight is not in the product_list csv, so it is default set to NaN
 for index, row in product_df.iterrows():
-    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], np.NaN)
-
+    produce_dic[row['Product']] = Produce(row['Product'], row['Color'], row['Serving Size'], row['Unit Weight'], float(row['Correction'].strip('%'))/100)
 
 
 # Iterate over DF and convert the string of date and time into DateTime objects
@@ -90,9 +89,8 @@ starting_x = 15
 visits = customer.visits
 servings = customer.total_servings()
 total = customer.total_price()
-print(visits)
-print(servings)
-print(total)
+# print(visits)
+# print(servings)
 # visits = 9 
 # servings = 170 
 # total = "$94.65"
@@ -152,7 +150,7 @@ for purchase in customer.purchase_dict:
     pdf.set_x(pdf.get_x() + 15)
     pdf.cell(40, 5, purchase, 0, 0, 'L', False)
     # pdf.cell(40, 5, f"${purchases[purchase]}", 0, 1, 'L', False)
-    pdf.cell(40, 5, f"${customer.purchase_dict[purchase]}", 0, 1, 'L', False)
+    pdf.cell(40, 5, f"${customer.purchase_dict[purchase].price}", 0, 1, 'L', False)
 
 # Adds the personal eating rainbow information box
 second_col_x = starting_x + 96
