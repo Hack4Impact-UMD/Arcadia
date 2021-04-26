@@ -95,6 +95,7 @@ for customer_id in customer_dic:
     pdf.set_margins(15, 15, -1)
     # customer_id = list(customer_dic.keys())[5]
     customer = customer_dic[customer_id]
+    
     # FIRST PAGE
     pdf.add_page()
     pdf.set_font('Arial', 'B', 18)
