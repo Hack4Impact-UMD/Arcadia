@@ -109,9 +109,6 @@ for customer_id in customer_dic:
     visits = customer.visits
     servings = customer.total_servings()
     total = customer.total_price()
-    # visits = 9 
-    # servings = 170 
-    # total = "$94.65"
     pdf.cell(62, 10, f"Visits: {visits}", 0, 0, 'C', False)
     pdf.cell(62, 10, f"Servings: {servings}", 0, 0, 'C', False)
     pdf.cell(62, 10, f"Total: ${total}", 0, 1, 'C', False)
@@ -198,7 +195,6 @@ for customer_id in customer_dic:
     image_file = f"{customer.first_name}-{customer.last_name}-Pie-Chart"
     plt.savefig(f"Pie-Charts/{image_file}.png", transparent=True)
 
-    # image_file="piechart.png"
     pdf.image(f"./Pie-Charts/{image_file}.png", second_col_x - 15, starting_y + 43, 125, 95, 'png')
 
     # Adds the benefits information box
@@ -259,8 +255,6 @@ for customer_id in customer_dic:
 
     add_more1 = min_color().upper()
     add_more2 = second_min_color().upper()
-    # add_more1 = "brown/white".upper()
-    # add_more2 = "blue/purple".upper()
     thank_you_text=("Thanks for being a Loyalty Member at the Arcadia Mobile Market! "
                 f"Based on your purchases last year, consider adding more {add_more1} "
                 f"and {add_more2} to your diet this season to make sure you get all "
