@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 from customer import Customer
 
-def pie_chart(cust):
+def pie_chart(customer):
 # Pie chart, where the slices will be ordered and plotted counter-clockwise:
-    dict_pie = Customer.color(cust)
+    dict_pie = customer.color()
     sizes = [dict_pie["blue"], dict_pie["red"], dict_pie["yellow"], dict_pie["green"], dict_pie["light_green"], dict_pie["brown"]]
 
     fig, ax = plt.subplots()

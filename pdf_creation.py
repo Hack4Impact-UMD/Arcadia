@@ -1,6 +1,7 @@
 from fpdf import FPDF 
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from customer import Customer
 from purchase import Purchase
 from produce import Produce
@@ -93,9 +94,9 @@ def add_contact_info():
 for customer_id in customer_dic:
     pdf = FPDF('P', 'mm', 'Letter')
     pdf.set_margins(15, 15, -1)
-    # customer_id = list(customer_dic.keys())[5]
+    # customer_id = list(customer_dic.keys())[0]
     customer = customer_dic[customer_id]
-    
+
     # FIRST PAGE
     pdf.add_page()
     pdf.set_font('Arial', 'B', 18)
@@ -186,10 +187,19 @@ for customer_id in customer_dic:
     pdf.multi_cell(80, 5, rainbow_info, 0, 'J', False)
     pdf.set_y(pdf.get_y() + 5)
 
-    # insert MATPLOTLIB stuff
+    # Generating the pie chart
+    dict_pie = customer.color()
+    sizes = [dict_pie["blue/purple"], dict_pie["red"], dict_pie["orange/yellow"], dict_pie["green"], dict_pie["light green"], dict_pie["brown/white"]]
+    print(dict_pie)
+    fig, ax = plt.subplots()
+    ax.pie(sizes, autopct=None, shadow=False, startangle=90, colors=["darkviolet", "red", "gold", "green", "lime", "tan"])
+    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-    image_file="piechart.png"
-    pdf.image(f"./Pie-Charts/{image_file}", second_col_x + 10 , starting_y + 55, 80, 75, 'png')
+    image_file = f"{customer.first_name}-{customer.last_name}-Pie-Chart"
+    plt.savefig(f"Pie-Charts/{image_file}.png", transparent=True)
+
+    # image_file="piechart.png"
+    pdf.image(f"./Pie-Charts/{image_file}.png", second_col_x - 15, starting_y + 43, 125, 95, 'png')
 
     # Adds the benefits information box
     total_spent = 82.20
