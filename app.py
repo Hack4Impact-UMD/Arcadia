@@ -25,6 +25,8 @@ pl_layout = [[sg.Text('Product List')],
             [sg.Text('Final CSV')],
             [sg.Input(), sg.FileBrowse()], 
             [sg.Text('Benefits CSV')],
+            [sg.Input(), sg.FileBrowse()],
+            [sg.Text('Download Location')],
             [sg.Input(), sg.FileBrowse()], 
             [sg.OK(), sg.Cancel()]] 
 
