@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from pdf_creation.py import generate_PDF 
+from pdf_creation import generate_PDF 
 
 # sg.theme('DarkAmber')   # Add a touch of color
 # # All the stuff inside your window.
@@ -36,6 +36,6 @@ window = sg.Window('Get filename example', pl_layout)
 
 event, values = window.read()
 if event == sg.OK():
-    generate_PDF(values[0], values[1], values[2], values[3])
+     generate_PDF(values[0], values[1], values[2], values[3])
 window.close()
 # print(values)
