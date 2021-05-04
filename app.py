@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-from pdf_creation.py import generate_PDF 
+from pdf_creation import generate_PDF 
 
 # sg.theme('DarkAmber')   # Add a touch of color
 # # All the stuff inside your window.
