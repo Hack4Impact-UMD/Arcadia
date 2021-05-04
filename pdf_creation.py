@@ -7,16 +7,18 @@ from purchase import Purchase
 from produce import Produce
 from datetime import datetime as dt
 
-def generate_PDF(self, product_list, final_csv, benefits_list, download_location): 
+def generate_PDF(product_list, final_csv, benefits_list, download_location): 
     # Imports the CSV file into a pandas DataFrame
-    customer_df = pd.read_csv('data/data_pull1.csv')
+    # customer_df = pd.read_csv('data/data_pull1.csv')
+    customer_df = pd.read_csv(final_csv)
     customer_dic = {}
     produce_dic = {}
 
     # Dictionary with key=customer_id and value=set of dates that customer visited
     customer_visits = {}
 
-    product_df = pd.read_csv('data/product_list.csv', skiprows=1)
+    # product_df = pd.read_csv('data/product_list.csv', skiprows=1)
+    product_df = pd.read_csv(product_list, skiprows=1)
 
     # Drop unnecessary first column and add column names
     product_df = product_df.drop('Unnamed: 0', axis=1)
@@ -44,7 +46,7 @@ def generate_PDF(self, product_list, final_csv, benefits_list, download_location
         except KeyError:
             # If produce is not in the produce list, create a Produce object with missing fields:
             # color="", serving_size=NaN, unit_weight=NaN, unit_price=actual unit price
-            print('\"' + row['Product'].rstrip() + '" is not a produce in the list')
+            # print('\"' + row['Product'].rstrip() + '" is not a produce in the list')
             produce = Produce(row['Product'].rstrip(), "", np.nan, np.nan, 0)
 
         produce.unit_price = row['Unit Price']
@@ -67,7 +69,7 @@ def generate_PDF(self, product_list, final_csv, benefits_list, download_location
         purch = Purchase(row['Visit Date'], row['Location'], produce, row['Quantity'], row['Price'])
         customer_dic[loyalty_number].purchase_dict[produce.name] = purch
 
-    ############################################################################################
+    # END OF PARSING THE CSV FILES
 
     # Adds the header to the top of the page (title + member number)
     def add_header():
@@ -79,6 +81,7 @@ def generate_PDF(self, product_list, final_csv, benefits_list, download_location
         pdf.cell(186, 20, '', 0, 0, 'C', True)
         pdf.set_x(starting_x)
         pdf.cell(186, 10, title, 0, 1, 'C', False)
+        
         # Adds the purchase report below title
         member="Purchase Report: Member #12"
         pdf.set_font('Arial', 'B', 14)
@@ -188,13 +191,13 @@ def generate_PDF(self, product_list, final_csv, benefits_list, download_location
         # Generating the pie chart
         dict_pie = customer.color()
         sizes = [dict_pie["blue/purple"], dict_pie["red"], dict_pie["orange/yellow"], dict_pie["green"], dict_pie["light green"], dict_pie["brown/white"]]
-        print(dict_pie)
         fig, ax = plt.subplots()
         ax.pie(sizes, autopct=None, shadow=False, startangle=90, colors=["darkviolet", "red", "gold", "green", "lime", "tan"])
         ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
         image_file = f"{customer.first_name}-{customer.last_name}-Pie-Chart"
         plt.savefig(f"Pie-Charts/{image_file}.png", transparent=True)
+        plt.close()
 
         pdf.image(f"./Pie-Charts/{image_file}.png", second_col_x - 15, starting_y + 43, 125, 95, 'png')
 
@@ -363,4 +366,4 @@ def generate_PDF(self, product_list, final_csv, benefits_list, download_location
 
         # Generates the PDF using the customer's name
         file_name = f"{customer.first_name} {customer.last_name} Report"
-        pdf.output(f"Customer-PDFs/{file_name}.pdf", 'F')
+        pdf.output(f"{download_location}/Customer Reports/{file_name}.pdf", 'F')
