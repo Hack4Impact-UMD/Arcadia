@@ -2,10 +2,11 @@ import os
 import PySimpleGUI as sg
 from pdf_creation import generate_PDF 
 
-sg.theme('Green')
+# Sets window color/theme
+sg.theme('LightGreen3')
 
 # Get paths of files
-pl_layout = [[sg.Text('Product List')],
+report_layout = [[sg.Text('Product List')],
             [sg.Input(), sg.FileBrowse()], 
             [sg.Text('Final CSV')],
             [sg.Input(), sg.FileBrowse()], 
@@ -15,7 +16,7 @@ pl_layout = [[sg.Text('Product List')],
             [sg.Input(), sg.FolderBrowse()], 
             [sg.OK(), sg.Cancel()]] 
 
-window = sg.Window('Arcadia Report Generator', pl_layout)
+window = sg.Window('Arcadia Report Generator', report_layout)
 
 event, values = window.read()
 if event == 'OK':
