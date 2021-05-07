@@ -19,6 +19,7 @@ report_layout = [[sg.Text('Product List')],
 window = sg.Window('Arcadia Report Generator', report_layout)
 
 event, values = window.read()
+# window.maximize()
 if event == 'OK':
      # Creates a folder caled Customer Reports to put the customer reports
      # in if the folder doesn't already exist
