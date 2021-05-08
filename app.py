@@ -6,17 +6,17 @@ from pdf_creation import generate_PDF
 sg.theme('LightGreen3')
 
 # Get paths of files
-report_layout = [[sg.Text('Product List')],
-            [sg.Input(), sg.FileBrowse()], 
-            [sg.Text('Final CSV')],
-            [sg.Input(), sg.FileBrowse()], 
-            [sg.Text('Benefits CSV')],
-            [sg.Input(), sg.FileBrowse()],
-            [sg.Text('Download Location')],
-            [sg.Input(), sg.FolderBrowse()], 
-            [sg.OK(), sg.Cancel()]] 
+report_layout = [[sg.Text('Product List', font = 'Arial 18')],
+            [sg.Input(font = 'Arial 16'), sg.FileBrowse(font = 'Arial 18')], 
+            [sg.Text('Final CSV', font = 'Arial 18')],
+            [sg.Input(font = 'Arial 16'), sg.FileBrowse(font = 'Arial 18')], 
+            [sg.Text('Benefits CSV', font = 'Arial 18')],
+            [sg.Input(font = 'Arial 16'), sg.FileBrowse(font = 'Arial 18')],
+            [sg.Text('Download Location', font = 'Arial 18')],
+            [sg.Input(font = 'Arial 16'), sg.FolderBrowse(font = 'Arial 18')], 
+            [sg.OK(font = 'Arial 18'), sg.Cancel(font = 'Arial 18')]] 
 
-window = sg.Window('Arcadia Report Generator', report_layout)
+window = sg.Window('Arcadia Report Generator', report_layout, size = (600, 400))
 
 event, values = window.read()
 # window.maximize()
