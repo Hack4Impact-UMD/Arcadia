@@ -3,7 +3,7 @@ import PySimpleGUI as sg
 from pdf_creation import generate_PDF 
 
 # Sets window color/theme
-sg.theme('LightGreen3')
+sg.theme('LightGreen2')
 
 # Get paths of files
 report_layout = [[sg.Text('Product List', font = 'Arial 18')],
@@ -16,7 +16,8 @@ report_layout = [[sg.Text('Product List', font = 'Arial 18')],
             [sg.Input(font = 'Arial 16'), sg.FolderBrowse(font = 'Arial 18')], 
             [sg.OK(font = 'Arial 18'), sg.Cancel(font = 'Arial 18')]] 
 
-window = sg.Window('Arcadia Report Generator', report_layout, size = (600, 400))
+
+window = sg.Window('Arcadia Report Generator', report_layout)
 
 event, values = window.read()
 # window.maximize()
