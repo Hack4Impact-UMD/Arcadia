@@ -196,10 +196,10 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
         image_file = f"{customer.first_name}-{customer.last_name}-Pie-Chart"
-        plt.savefig(f"Pie-Charts/{image_file}.png", transparent=True)
+        plt.savefig(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", transparent=True)
         plt.close()
 
-        pdf.image(f"./Pie-Charts/{image_file}.png", second_col_x - 15, starting_y + 43, 125, 95, 'png')
+        pdf.image(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", second_col_x - 15, starting_y + 43, 125, 95, 'png')
 
         # Adds the benefits information box
         total_spent = 82.20
