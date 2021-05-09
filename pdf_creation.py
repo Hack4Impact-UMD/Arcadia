@@ -206,7 +206,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.set_xy(second_col_x, starting_y + 135)
         pdf.set_fill_color(203, 150, 139)
         pdf.cell(90, 60, '', 0, 0, 'C', True)
-        spent_info=f"You spent ${total_spent} in nutrition benefits at the Mobile Market in 2017, including:"
+        spent_info=f"You spent ${total_spent} in nutrition benefits at the Mobile Market in 2021, including:"
         pdf.set_xy(second_col_x, starting_y + 140)
         pdf.set_font('Arial', '', 14)
         pdf.multi_cell(90, 5, spent_info, 0, 'C', False)
