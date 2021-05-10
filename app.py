@@ -25,7 +25,8 @@ if event == 'OK':
      # in if the folder doesn't already exist
      if not os.path.exists(f"{values[3]}/Customer Reports"):
           os.mkdir(f"{values[3]}/Customer Reports")
-     os.mkdir(f"{values[3]}/Customer Reports/Pie-Charts")
+     if not os.path.exists(f"{values[3]}/Customer Reports/Pie-Charts"):
+          os.mkdir(f"{values[3]}/Customer Reports/Pie-Charts")
      generate_PDF(values[0], values[1], values[2], values[3])
 
 window.close()

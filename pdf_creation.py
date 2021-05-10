@@ -83,7 +83,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.cell(186, 10, title, 0, 1, 'C', False)
         
         # Adds the purchase report below title
-        member="Purchase Report: Member #12"
+        member = f"Purchase Report: Member #{customer.member_id - 10000000}"
         pdf.set_font('Arial', 'B', 14)
         pdf.cell(186, 10, member, 0, 1, 'C', False)
 
