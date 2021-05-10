@@ -144,25 +144,6 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.set_x(starting_x)
         pdf.cell(85, 10, "YOUR 2021 PURCHASES", 0, 1, 'C', False)
         pdf.set_font('Arial', '', 12)
-        purchases = {
-                        'Asian Pears' : '6.25',
-                        'Blueberries' : '3.50',
-                        'Broccoli' : '1.95',
-                        'Cabbage' : '8.59',
-                        'Cantaloupe' : '3.00',
-                        'Corn' : '3.96',
-                        'Cucumber' : '1.95',
-                        'Garlic' : '1.00',
-                        'Kale' : '4.00',
-                        'Okra (Pound)' : '3.72',
-                        'Peaches' : '20.72',
-                        'Peppers (Bell)' : '2.40',
-                        'Plums' : '3.75',
-                        'Potatoes' : '5.25',
-                        'Potatoes (Sweet)' : '5.01',
-                        'Tomatoes (Red)' : '9.50',
-                        'Watermelon (Small)' : '6.10'
-                    }
 
         # for purchase in purchases:
         for purchase in customer.purchase_dict:
