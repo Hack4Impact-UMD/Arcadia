@@ -70,11 +70,11 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         customer_dic[loyalty_number].purchase_dict[produce.name] = purch
 
     # END OF PARSING THE CSV FILES
-
+    
     # Adds the header to the top of the page (title + member number)
-    def add_header():
+    def add_header(year):
         # Adds the title
-        title="2021 Arcadia Mobile Market"
+        title=f"{year} Arcadia Mobile Market"
         pdf.set_x(15)
         starting_x = pdf.get_x()
         pdf.set_fill_color(115, 170, 110)
@@ -100,13 +100,14 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.set_margins(15, 15, -1)
         # customer_id = list(customer_dic.keys())[0]
         customer = customer_dic[customer_id]
+        year = customer.purchase_dict[list(customer.purchase_dict.keys())[0]].date.year
 
         # FIRST PAGE
         pdf.add_page()
         pdf.set_font('Arial', 'B', 18)
 
         # Header
-        add_header()
+        add_header(year)
         starting_x = 15
 
         # Adds the visits, servings, and total on one line below the header
@@ -142,7 +143,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.set_font('Arial', 'B', 14)
         pdf.cell(85, 16*5 + 50, '', 0, 0, 'C', True)
         pdf.set_x(starting_x)
-        pdf.cell(85, 10, "YOUR 2021 PURCHASES", 0, 1, 'C', False)
+        pdf.cell(85, 10, f"YOUR {year} PURCHASES", 0, 1, 'C', False)
         pdf.set_font('Arial', '', 12)
 
         # for purchase in purchases:
@@ -159,7 +160,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.cell(90, 45, '', 0, 0, 'C', True)
         pdf.set_x(second_col_x)
         pdf.set_font('Arial', 'B', 14)
-        pdf.cell(90, 10, "Your Personal 2021 Eating Rainbow", 0, 1, 'C', False)
+        pdf.cell(90, 10, f"Your Personal {year} Eating Rainbow", 0, 1, 'C', False)
         rainbow_info=("This is your personal eating rainbow chart, based on the "
                     "percentage of colors of produce you purchased at the mobile "
                     "market last year. Turn the page for suggestions on what "
@@ -187,7 +188,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.set_xy(second_col_x, starting_y + 135)
         pdf.set_fill_color(203, 150, 139)
         pdf.cell(90, 60, '', 0, 0, 'C', True)
-        spent_info=f"You spent ${total_spent} in nutrition benefits at the Mobile Market in 2021, including:"
+        spent_info=f"You spent ${total_spent} in nutrition benefits at the Mobile Market in {year}, including:"
         pdf.set_xy(second_col_x, starting_y + 140)
         pdf.set_font('Arial', '', 14)
         pdf.multi_cell(90, 5, spent_info, 0, 'C', False)
@@ -214,7 +215,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         pdf.set_font('Arial', 'B', 18)
 
         # Header
-        add_header()
+        add_header(year)
         starting_x = 15
 
         # Adds thank you text
