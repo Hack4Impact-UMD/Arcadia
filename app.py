@@ -8,7 +8,7 @@ sg.theme('LightGreen3')
 # Get paths of files
 report_layout = [[sg.Text('Product List', font = 'Arial 18')],
             [sg.Input(font = 'Arial 16'), sg.FileBrowse(font = 'Arial 18')], 
-            [sg.Text('Final CSV', font = 'Arial 18')],
+            [sg.Text('Customer Purchases', font = 'Arial 18')],
             [sg.Input(font = 'Arial 16'), sg.FileBrowse(font = 'Arial 18')], 
             [sg.Text('Benefits CSV', font = 'Arial 18')],
             [sg.Input(font = 'Arial 16'), sg.FileBrowse(font = 'Arial 18')],

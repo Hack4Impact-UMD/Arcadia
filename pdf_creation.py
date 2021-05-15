@@ -7,6 +7,9 @@ from purchase import Purchase
 from produce import Produce
 from datetime import datetime as dt
 
+product_list = "data/product_list.csv"
+final_csv = "data/data_pull1.csv"
+
 def generate_PDF(product_list, final_csv, benefits_list, download_location): 
     # Imports the CSV file into a pandas DataFrame
     # customer_df = pd.read_csv('data/data_pull1.csv')
@@ -101,6 +104,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         # customer_id = list(customer_dic.keys())[0]
         customer = customer_dic[customer_id]
         year = customer.purchase_dict[list(customer.purchase_dict.keys())[0]].date.year
+        # print(customer.purchase_dict[list(customer.purchase_dict.keys())[0]].date.month)
 
         # FIRST PAGE
         pdf.add_page()
@@ -181,7 +185,7 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         plt.savefig(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", transparent=True)
         plt.close()
 
-        pdf.image(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", second_col_x - 15, starting_y + 43, 125, 95, 'png')
+        pdf.image(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", second_col_x - 17, starting_y + 43, 125, 95, 'png')
 
         # Adds the benefits information box
         total_spent = 82.20
@@ -238,9 +242,19 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
                 if customer_pie[color] == lowest_value:
                     return color
 
+        total_colors = sum(customer_pie.values())
+        total_green = customer_pie["light green"] + customer_pie["green"]
 
-        add_more1 = min_color().upper()
-        add_more2 = second_min_color().upper()
+        # If green is less than half the pie chart the customer should eat more of it
+        if total_green < total_colors/2:
+            add_more1 = "GREEN/LIGHT GREEN"
+            del customer_pie["green"]
+            del customer_pie["light green"]
+            add_more2 = min_color().upper()
+        else:
+            add_more1 = min_color().upper()
+            add_more2 = second_min_color().upper()
+        
         thank_you_text=("Thanks for being a Loyalty Member at the Arcadia Mobile Market! "
                     f"Based on your purchases last year, consider adding more {add_more1} "
                     f"and {add_more2} to your diet this season to make sure you get all "
