@@ -23,7 +23,7 @@ window = sg.Window('Arcadia Report Generator', report_layout)
 event, values = window.read()
 # window.maximize()
 if event == 'OK':
-     # Creates a folder caled Customer Reports to put the customer reports
+     # Creates a folder called "Customer Reports <date>"" to put the customer reports
      # in if the folder doesn't already exist
      today = date.today()
      date = today.strftime("%b-%d-%Y")
@@ -33,6 +33,8 @@ if event == 'OK':
      if not os.path.exists(f"{values[3]}/Pie-Charts"):
           os.mkdir(f"{values[3]}/Pie-Charts")
      generate_PDF(values[0], values[1], values[2], values[3], date)
+
+     # Deletes the pie chart folder once PDFs are generated because it is unnecessary
      shutil.rmtree(f"{values[3]}/Pie-Charts")
 
 window.close()
