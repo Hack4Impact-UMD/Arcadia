@@ -10,7 +10,7 @@ from datetime import datetime as dt
 product_list = "data/product_list.csv"
 final_csv = "data/data_pull1.csv"
 
-def generate_PDF(product_list, final_csv, benefits_list, download_location): 
+def generate_PDF(product_list, final_csv, benefits_list, download_location, date): 
     # Imports the CSV file into a pandas DataFrame
     # customer_df = pd.read_csv('data/data_pull1.csv')
     customer_df = pd.read_csv(final_csv)
@@ -182,10 +182,10 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
         ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
         image_file = f"{customer.first_name}-{customer.last_name}-Pie-Chart"
-        plt.savefig(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", transparent=True)
+        plt.savefig(f"{download_location}/Pie-Charts/{image_file}.png", transparent=True)
         plt.close()
 
-        pdf.image(f"{download_location}/Customer Reports/Pie-Charts/{image_file}.png", second_col_x - 17, starting_y + 43, 125, 95, 'png')
+        pdf.image(f"{download_location}/Pie-Charts/{image_file}.png", second_col_x - 17, starting_y + 43, 125, 95, 'png')
 
         # Adds the benefits information box
         total_spent = 82.20
@@ -252,6 +252,8 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
             del customer_pie["light green"]
             add_more2 = min_color().upper()
         else:
+            del customer_pie["green"]
+            del customer_pie["light green"]
             add_more1 = min_color().upper()
             add_more2 = second_min_color().upper()
         
@@ -362,4 +364,4 @@ def generate_PDF(product_list, final_csv, benefits_list, download_location):
 
         # Generates the PDF using the customer's name
         file_name = f"{customer.first_name} {customer.last_name} Report"
-        pdf.output(f"{download_location}/Customer Reports/{file_name}.pdf", 'F')
+        pdf.output(f"{download_location}/Customer Reports {date}/{file_name}.pdf", 'F')

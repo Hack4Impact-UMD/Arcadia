@@ -1,5 +1,7 @@
 import os
 import PySimpleGUI as sg
+import shutil
+from datetime import date
 from pdf_creation import generate_PDF 
 
 # Sets window color/theme
@@ -23,10 +25,14 @@ event, values = window.read()
 if event == 'OK':
      # Creates a folder caled Customer Reports to put the customer reports
      # in if the folder doesn't already exist
-     if not os.path.exists(f"{values[3]}/Customer Reports"):
-          os.mkdir(f"{values[3]}/Customer Reports")
-     if not os.path.exists(f"{values[3]}/Customer Reports/Pie-Charts"):
-          os.mkdir(f"{values[3]}/Customer Reports/Pie-Charts")
-     generate_PDF(values[0], values[1], values[2], values[3])
+     today = date.today()
+     date = today.strftime("%b-%d-%Y")
+
+     if not os.path.exists(f"{values[3]}/Customer Reports {date}"):
+          os.mkdir(f"{values[3]}/Customer Reports {date}")
+     if not os.path.exists(f"{values[3]}/Pie-Charts"):
+          os.mkdir(f"{values[3]}/Pie-Charts")
+     generate_PDF(values[0], values[1], values[2], values[3], date)
+     shutil.rmtree(f"{values[3]}/Pie-Charts")
 
 window.close()
